@@ -69,3 +69,10 @@ en « network secret » de l'environnement cloud). Si une connexion expire, l'in
 - Blotato : connexion OK, compte TikTok **@rt_production_** (id Blotato 69898) enregistré dans config.json.
 - **« L'Étage 4 » P1 programmée pour le 19/11 à 18 h 45** (postSubmissionId a2ee75b3-…), étiquette IA activée.
 - Premier relevé de stats : **407 abonnés, 9 877 j'aime, 2 vidéos** (point de départ de la croissance).
+
+### 2026-11-18 ~21 h 50 (Paris) — Test de publication immédiate (demandé par l'utilisateur)
+- « L'Étage 4 » P1 **publiée tout de suite** : https://www.tiktok.com/@rt_production_/video/7709614358640233750
+  (statut Blotato « published » en ~80 s, étiquette IA activée).
+- Programmation du 19/11 18 h 45 annulée (DELETE /v2/schedules/7154212) pour éviter un doublon.
+- Conséquence : **P2 doit sortir le 19/11 à 18 h 45** (promesse « la suite demain »). Priorité du prochain cycle.
+- Note technique : la liste des programmations est `GET /v2/schedules`, l'annulation `DELETE /v2/schedules/<id numérique>`.
