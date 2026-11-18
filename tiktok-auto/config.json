@@ -1,8 +1,12 @@
 {
-  "tiktok_username": null,
-  "blotato_account_id": null,
+  "tiktok_username": "@rt_production_",
+  "blotato_account_id": "69898",
   "fuseau": "Europe/Paris",
-  "creneaux": ["12:30", "18:45", "21:15"],
+  "creneaux": [
+    "12:30",
+    "18:45",
+    "21:15"
+  ],
   "max_par_jour": 3,
   "langue": "fr"
 }
