@@ -76,3 +76,17 @@ en « network secret » de l'environnement cloud). Si une connexion expire, l'in
 - Programmation du 19/11 18 h 45 annulée (DELETE /v2/schedules/7154212) pour éviter un doublon.
 - Conséquence : **P2 doit sortir le 19/11 à 18 h 45** (promesse « la suite demain »). Priorité du prochain cycle.
 - Note technique : la liste des programmations est `GET /v2/schedules`, l'annulation `DELETE /v2/schedules/<id numérique>`.
+
+### 2026-11-18 ~23 h (Paris) — Retour de l'utilisateur appliqué + P2 programmée
+- Demande de l'utilisateur : (1) voix accordée au personnage (fille → voix de femme, garçon → voix d'homme),
+  (2) plus d'images. Appliqué dans le générateur et inscrit comme règle permanente dans CLAUDE.md :
+  champ `narrateur.genre` → fr-FR-DeniseNeural / fr-FR-HenriNeural ; un plan toutes les ~4,5 s.
+- Incidents corrigés : le service d'images gratuit refuse les requêtes parallèles (HTTP 402, 1 image / 45 s
+  par IP) et les graines trop grandes (HTTP 400) → téléchargements séquentiels espacés de 47 s, graine réduite.
+  Durée de production : ~20 min par vidéo.
+- Défaut repéré à la vérification : le mot surligné débordait sur l'espace suivant (« FRAPPÉÀ ») → corrigé
+  (agrandissement centré sur le mot, espaces plus larges).
+- **« L'Étage 4 » P2** : 85,5 s, voix de femme (Léa), 18 images / 19 plans, -14,5 LUFS. 2 faux positifs
+  LanguageTool justifiés. **Programmée le 19/11 à 18 h 45** (postSubmissionId bca0f17c-…).
+- Prochain cycle : écrire et produire P3 (fin de série, voix de femme) pour le 20/11 à 18 h 45, puis lancer
+  une 2ᵉ série au créneau de 21 h 15.

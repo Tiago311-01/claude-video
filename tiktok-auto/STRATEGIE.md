@@ -19,7 +19,8 @@ _Dernière mise à jour : 2026-11-18 (cycle 1)_
 | Structure | accroche → contexte (1 phrase) → 3 escalades → cliffhanger → appel à l'action | rétention par paliers |
 | Séries | 3 épisodes, 1 épisode par jour et par série, même créneau | fait revenir le public ; « Partie 2 demain » toujours tenu |
 | Appel à l'action | « Abonne-toi » + une question fermée en commentaire (« toi, tu ouvrirais ? ») | commentaires = signal fort |
-| Voix | fr-FR-HenriNeural, débit +6 % | grave, posée, adaptée au suspense |
+| Voix | selon le narrateur : femme → fr-FR-DeniseNeural, homme → fr-FR-HenriNeural | consigne de l'utilisateur (18/11) |
+| Images | un plan toutes les ~4,5 s (≈ 18 images par vidéo) | consigne de l'utilisateur (18/11) : plus d'images |
 | Son | nappe originale synthétisée (aucun son tiers) | voir « Sons » ci-dessous |
 
 ## Calendrier
@@ -54,7 +55,6 @@ générateur (donc libre de droits, zéro risque de retrait pour droits d'auteur
 
 ## Tests prévus (un seul changement à la fois)
 1. Durée : ~75 s vs ~100 s.
-2. Voix : Henri (homme) vs Denise (femme) sur une série à narratrice.
 3. Accroche : question vs affirmation choc.
 4. Créneau : 18:45 vs 21:15.
 
@@ -64,4 +64,7 @@ générateur (donc libre de droits, zéro risque de retrait pour droits d'auteur
   ambiance boîte à musique), série de Noël inquiétante pour décembre.
 
 ## Leçons apprises
-_(aucune donnée de performance pour l'instant : publication pas encore connectée)_
+- 18/11 — Retour de l'utilisateur sur P1 : voix à faire correspondre au narrateur (Léa → voix de femme) et
+  pas assez d'images (1 toutes les 12-15 s). Corrigé dans le générateur à partir de P2.
+- 18/11 — Le service d'images gratuit limite à 1 image / 45 s par IP et refuse les graines > ~1 million :
+  téléchargements séquentiels espacés de 47 s.

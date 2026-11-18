@@ -157,6 +157,9 @@ STYLE_SUFFIX = (
 )
 
 
+_LAST_IMG = 0.0
+
+
 def fetch_image(prompt: str, seed: int) -> Image.Image | None:
     import requests
 
@@ -165,20 +168,30 @@ def fetch_image(prompt: str, seed: int) -> Image.Image | None:
     p = CACHE / "img" / f"{h}.jpg"
     p.parent.mkdir(parents=True, exist_ok=True)
     if not p.exists():
+        import time
+
+        global _LAST_IMG
+        seed = seed % 1_000_000  # le service refuse les graines trop grandes (HTTP 400)
+        wait = 47 - (time.time() - _LAST_IMG)  # limite gratuite : 1 image / 45 s par adresse IP
+        if wait > 0:
+            time.sleep(wait)
         url = (
             "https://image.pollinations.ai/prompt/"
             + urllib.parse.quote(prompt + STYLE_SUFFIX)
             + f"?width=1080&height=1920&seed={seed}&nologo=true&model=flux"
         )
-        for attempt in range(3):
+        # Le service gratuit n'accepte qu'UNE requête à la fois : appels séquentiels + pauses croissantes
+        for attempt in range(6):
             try:
-                r = requests.get(url, timeout=120, verify=_CA if os.path.exists(_CA) else True)
+                r = requests.get(url, timeout=150, verify=_CA if os.path.exists(_CA) else True)
+                _LAST_IMG = time.time()
                 if r.status_code == 200 and r.headers.get("content-type", "").startswith("image"):
                     p.write_bytes(r.content)
                     break
-                log(f"image HTTP {r.status_code} (essai {attempt + 1})")
+                log(f"image HTTP {r.status_code} (essai {attempt + 1}) {r.text[:120]!r}")
             except Exception as e:
                 log(f"image erreur {e} (essai {attempt + 1})")
+            time.sleep(47)
         else:
             return None
     im = Image.open(p).convert("RGB")
@@ -286,20 +299,43 @@ def impact(seed: int = 0) -> np.ndarray:
 # --------------------------------------------------------------------------------------
 # Construction de la timeline
 # --------------------------------------------------------------------------------------
+# Voix gratuites edge-tts selon le genre du narrateur (consigne : fille = voix de femme, garçon = voix d'homme)
+VOIX = {
+    "femme": ("fr-FR-DeniseNeural", "+4%", "+0Hz"),
+    "homme": ("fr-FR-HenriNeural", "+6%", "-2Hz"),
+}
+
+
+def pick_voice(story: dict, scene: dict | None = None) -> tuple[str, str, str]:
+    """Voix du segment : 'genre' de la scène (ex. réplique d'un autre personnage) sinon genre du narrateur.
+    Un champ 'voix' explicite reste prioritaire."""
+    genre = (scene or {}).get("genre") or story.get("narrateur", {}).get("genre") or "homme"
+    v, rate, pitch = VOIX.get(genre, VOIX["homme"])
+    if not (scene or {}).get("genre") and story.get("voix"):
+        v = story["voix"]
+    return v, story.get("debit", rate), story.get("hauteur", pitch)
+
+
+def as_list(v) -> list[str]:
+    return [v] if isinstance(v, str) else list(v)
+
+
 def build_timeline(story: dict):
-    voice = story.get("voix", "fr-FR-HenriNeural")
-    rate = story.get("debit", "+6%")
-    pitch = story.get("hauteur", "-2Hz")
-    segs = [{"texte": story["accroche"], "visuel": story["scenes"][0]["visuel"], "kind": "accroche"}]
-    for s in story["scenes"]:
-        segs.append({"texte": s["texte"], "visuel": s["visuel"], "kind": "scene", "palette": s.get("palette")})
-    segs.append({"texte": story["appel_action"], "visuel": story.get("visuel_fin", story["scenes"][-1]["visuel"]), "kind": "cta"})
+    sc = story["scenes"]
+    first = as_list(sc[0].get("visuels") or sc[0]["visuel"])
+    segs = [{"texte": story["accroche"], "kind": "accroche", "voix": pick_voice(story),
+             "visuels": as_list(story.get("visuels_accroche") or first[:1])}]
+    for s in sc:
+        segs.append({"texte": s["texte"], "kind": "scene", "voix": pick_voice(story, s),
+                     "visuels": as_list(s.get("visuels") or s["visuel"])})
+    fin = story.get("visuels_fin") or story.get("visuel_fin") or as_list(sc[-1].get("visuels") or sc[-1]["visuel"])[-1:]
+    segs.append({"texte": story["appel_action"], "kind": "cta", "voix": pick_voice(story), "visuels": as_list(fin)})
 
     voice_track = []
     words = []
     t = 0.15
     for i, sg in enumerate(segs):
-        pcm, ws = tts_segment(sg["texte"], voice, rate, pitch)
+        pcm, ws = tts_segment(sg["texte"], *sg["voix"])
         sg["start"] = t
         sg["dur"] = len(pcm) / SR
         for w in ws:
@@ -312,8 +348,31 @@ def build_timeline(story: dict):
     for i, sg in enumerate(segs):
         sg["vis_start"] = 0.0 if i == 0 else sg["start"] - GAP / 2
         sg["vis_end"] = total if i == len(segs) - 1 else segs[i + 1]["start"] - GAP / 2
-    # l'accroche et la première scène partagent la même image -> pas de fondu entre elles
     return segs, words, voice_track, total
+
+
+# Cadrages ajoutés quand une scène a moins de descriptions que de plans nécessaires
+CADRAGES = [
+    "", ", close-up detail shot", ", wide establishing shot", ", low angle dramatic shot",
+    ", over-the-shoulder shot", ", extreme close-up", ", high angle shot from above", ", dutch angle shot",
+]
+
+
+def plan_shots(segs: list, plan_dur: float) -> list:
+    """Découpe chaque segment en plans d'environ plan_dur secondes (au moins un par description)."""
+    shots = []
+    for i, sg in enumerate(segs):
+        dur = sg["vis_end"] - sg["vis_start"]
+        n = max(len(sg["visuels"]), round(dur / plan_dur), 1)
+        for k in range(n):
+            base = sg["visuels"][k % len(sg["visuels"])]
+            variant = k // len(sg["visuels"])
+            prompt = base + (CADRAGES[(variant + i) % len(CADRAGES)] if variant else "")
+            shots.append({
+                "prompt": prompt, "seg": i,
+                "start": sg["vis_start"] + dur * k / n, "end": sg["vis_start"] + dur * (k + 1) / n,
+            })
+    return shots
 
 
 def group_words(words: list) -> list:
@@ -359,7 +418,7 @@ def make_vignette() -> np.ndarray:
 def ken_burns(im: Image.Image, p: float, idx: int) -> Image.Image:
     sw, sh = im.size
     rng = random.Random(idx * 7919)
-    z0, z1 = (1.0, 1.14) if idx % 2 == 0 else (1.14, 1.0)
+    z0, z1 = (1.0, 1.10) if idx % 2 == 0 else (1.10, 1.0)
     e = 0.5 - 0.5 * math.cos(math.pi * p)  # ease in-out
     z = z0 + (z1 - z0) * e
     ww, wh = sw / z, sh / z
@@ -446,23 +505,25 @@ def render_overlay(img: Image.Image, t: float, ctx: dict):
                     pop = max(0, 1 - abs(k - 0.5) * 2) if 0 <= k <= 1 else 0
                 pieces.append((w["w"].upper(), active, pop))
             fw = font("black", fsz)
-            sp = d.textlength(" ", font=fw)
+            sp = d.textlength(" ", font=fw) * 1.6
             widths = [d.textlength(p[0], font=fw) for p in pieces]
             tot = sum(widths) + sp * (len(pieces) - 1)
             scale = min(1.0, (W - 120) / tot) if tot else 1
             f2 = font("black", int(fsz * scale))
             widths = [d.textlength(p[0], font=f2) for p in pieces]
-            sp = d.textlength(" ", font=f2)
+            sp = d.textlength(" ", font=f2) * 1.6
             tot = sum(widths) + sp * (len(pieces) - 1)
             appear = min(1, (t - ch["start"]) / 0.08)
             x = (W - tot) / 2
             yb = 1130 + (1 - appear) * 25
             for (txt, active, pop), wd in zip(pieces, widths):
-                fz = int(fsz * scale * (1 + 0.12 * pop))
+                fz = int(fsz * scale * (1 + 0.10 * pop))
                 fa = font("black", fz)
                 col = accent if active else (255, 255, 255)
-                off = (fz - int(fsz * scale)) / 2
-                d.text((x - off * 0.5, yb - off), txt, font=fa, fill=col + (255,), stroke_width=9, stroke_fill=(0, 0, 0, 255))
+                # le mot grossit autour de son propre centre : il ne déborde jamais sur l'espace voisin
+                wz = d.textlength(txt, font=fa)
+                dy = (fz - int(fsz * scale)) / 2
+                d.text((x + (wd - wz) / 2, yb - dy), txt, font=fa, fill=col + (255,), stroke_width=9, stroke_fill=(0, 0, 0, 255))
                 x += wd + sp
             break
     return img
@@ -481,18 +542,18 @@ def _render_range(args):
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "12", "-pix_fmt", "yuv420p", out_path],
         stdin=subprocess.PIPE,
     )
-    segs = ctx["segs"]
+    shots = ctx["shots"]
     for fi in range(frame_from, frame_to):
         t = fi / FPS
-        cur = next((i for i, s in enumerate(segs) if s["vis_start"] <= t < s["vis_end"]), len(segs) - 1)
-        s = segs[cur]
-        p = (t - s["vis_start"]) / max(0.01, s["vis_end"] - s["vis_start"])
-        frame = ken_burns(imgs[s["img"]], p, s["img"])
-        if cur > 0 and t - s["vis_start"] < XFADE and segs[cur - 1]["img"] != s["img"]:
-            pr = segs[cur - 1]
-            pp = (t - pr["vis_start"]) / max(0.01, pr["vis_end"] - pr["vis_start"])
-            prev = ken_burns(imgs[pr["img"]], min(1.0, pp), pr["img"])
-            frame = Image.blend(prev, frame, (t - s["vis_start"]) / XFADE)
+        cur = next((i for i, s in enumerate(shots) if s["start"] <= t < s["end"]), len(shots) - 1)
+        s = shots[cur]
+        p = (t - s["start"]) / max(0.01, s["end"] - s["start"])
+        frame = ken_burns(imgs[s["img"]], p, cur)
+        if cur > 0 and t - s["start"] < XFADE and shots[cur - 1]["img"] != s["img"]:
+            pr = shots[cur - 1]
+            pp = (t - pr["start"]) / max(0.01, pr["end"] - pr["start"])
+            prev = ken_burns(imgs[pr["img"]], min(1.0, pp), cur - 1)
+            frame = Image.blend(prev, frame, (t - s["start"]) / XFADE)
         arr = np.asarray(frame, dtype=np.float32)
         # légère respiration lumineuse
         flick = 1 + 0.025 * math.sin(t * 2.1) + 0.015 * math.sin(t * 7.3)
@@ -538,29 +599,35 @@ def main():
     log(f"durée totale : {total:.1f}s, {len(words)} mots")
 
     tmp = Path(tempfile.mkdtemp(prefix="gen_", dir=CACHE))
-    # visuels (un par scène ; l'accroche réutilise la scène 1)
-    prompts = []
-    for sg in segs:
-        if sg["visuel"] not in prompts:
-            prompts.append(sg["visuel"])
-    img_paths = []
-    for i, pr in enumerate(prompts):
+    # visuels : un plan toutes les ~4,5 s (consigne : plus d'images)
+    shots = plan_shots(segs, float(story.get("duree_plan", 4.5)))
+    keys = []
+    for sh in shots:
+        if sh["prompt"] not in keys:
+            keys.append(sh["prompt"])
+        sh["img"] = keys.index(sh["prompt"])
+
+    def _get(i_pr):
+        i, pr = i_pr
         im = fetch_image(pr, seed + i)
         if im is None:
             log(f"visuel {i + 1}: repli procédural")
             im = procedural_image(seed + i, story.get("palette", "nuit"))
         p = tmp / f"img{i}.png"
         im.save(p)
-        img_paths.append(str(p))
-        log(f"visuel {i + 1}/{len(prompts)} prêt")
-    for sg in segs:
-        sg["img"] = prompts.index(sg["visuel"])
+        return str(p)
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(1) as ex:  # 1 seule requête à la fois (limite du service gratuit)
+        img_paths = list(ex.map(_get, enumerate(keys)))
+    log(f"{len(img_paths)} visuels prêts pour {len(shots)} plans")
 
     accent = story.get("couleur", [255, 210, 0])
     serie = story.get("serie")
     badge = f"PARTIE {story['episode']}" if serie and story.get("episode") else ""
     ctx = {
-        "segs": [{k: v for k, v in s.items() if k != "texte"} for s in segs],
+        "segs": [{k: v for k, v in s.items() if k not in ("texte", "voix", "visuels")} for s in segs],
+        "shots": shots,
         "chunks": group_words(words),
         "total": total,
         "img_paths": img_paths,
@@ -585,7 +652,7 @@ def main():
     duck = 1 - 0.55 * np.clip(env / (env.max() + 1e-6) * 4, 0, 1)
     mix = voice * 0.9 + music * 0.16 * duck
     for i, sg in enumerate(segs[1:], 1):
-        if segs[i - 1]["img"] != sg["img"]:
+        if True:  # souffle discret à chaque changement de partie (pas à chaque plan)
             w_ = whoosh(seed=i) * 0.10
             i0 = max(0, int((sg["vis_start"] - 0.35) * SR))
             mix[i0 : i0 + len(w_)] += w_[: n - i0]

@@ -111,11 +111,18 @@ taux de commentaires, et abonnés gagnés entre deux relevés.
   le suspense vient du mystère, pas du gore.
 - Les nombres sont écrits en lettres dans les textes lus (meilleure prononciation et sous-titres).
 - `legende` contient toujours « Fiction » ou « histoire inventée » + mention IA.
-- `visuel` : description en anglais, sans texte ni personnage protégé.
+- **Voix (consigne de l'utilisateur, 18/11)** : `"narrateur": {"nom": "...", "genre": "femme"|"homme"}`.
+  Narratrice = voix de femme (fr-FR-DeniseNeural), narrateur = voix d'homme (fr-FR-HenriNeural).
+  Une scène où parle un autre personnage peut avoir son propre `"genre"`. Garder la même voix dans toute une série.
+- **Images (consigne de l'utilisateur, 18/11)** : beaucoup d'images, un nouveau plan toutes les ~4,5 s.
+  Donner pour chaque scène une liste `"visuels"` de 2 à 3 descriptions différentes (plan large, gros plan,
+  détail…), plus `"visuels_accroche"` (2) et `"visuels_fin"` (1). Le générateur complète avec des cadrages
+  variés si une scène est longue.
+- `visuels` : descriptions en anglais, sans texte ni personnage protégé.
 
 ### 6. Produire et vérifier
 ```bash
-python3 generateur/generer.py histoires/<id>.json      # ≈ 5 min sur 4 cœurs
+python3 generateur/generer.py histoires/<id>.json      # ≈ 20 min : images limitées à 1 / 45 s (service gratuit) + 5 min de montage
 python3 outils/verifier.py histoires/<id>.json         # code 0 obligatoire
 ```
 Puis OUVRIR `videos/<id>.planche.jpg` (outil Read) et vérifier : sous-titres lisibles, visuels

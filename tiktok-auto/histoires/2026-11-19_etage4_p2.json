@@ -1,0 +1,83 @@
+{
+  "id": "2026-11-19_etage4_p2",
+  "serie": "L'Étage 4",
+  "episode": 2,
+  "episodes_prevus": 3,
+  "creneau": "18:45",
+  "titre": "L'Étage 4 — Partie 2",
+  "titre_ecran": "Les traces qui ne repartent pas",
+  "narrateur": {
+    "nom": "Léa",
+    "genre": "femme"
+  },
+  "ambiance": "mystere",
+  "palette": "nuit",
+  "couleur": [
+    255,
+    210,
+    0
+  ],
+  "accroche": "Quelqu'un a frappé à ma porte à trois heures trente-trois. Je n'ai pas ouvert. Le lendemain matin, j'ai compris que j'avais bien fait.",
+  "visuels_accroche": [
+    "view from inside a dark apartment of a closed front door at night, thin line of light under the door with the shadow of two feet, horror atmosphere",
+    "close-up of a frightened young woman's eye looking through a door peephole in the dark"
+  ],
+  "scenes": [
+    {
+      "texte": "Si tu as raté la partie un : mon immeuble n'a que trois étages, mais l'ascenseur monte au quatrième. Cette nuit-là, les coups ont duré onze minutes. Puis, à trois heures quarante-quatre pile, plus rien. Le silence.",
+      "visuels": [
+        "old french apartment building at night, rain, one lit window, a lonely streetlamp, fog",
+        "a young woman's trembling hand hovering near an old brass door handle in the dark",
+        "young woman sitting on the floor with her back against her apartment door at night, knees to chest, dim blue light"
+      ]
+    },
+    {
+      "texte": "Au lever du jour, j'ai entrouvert la porte. Sur le palier, des traces de pas mouillées partaient de l'ascenseur et venaient jusqu'à mon paillasson. Elles s'arrêtaient là. Aucune ne repartait.",
+      "visuels": [
+        "wet footprints on an old tiled hallway floor leading from a vintage elevator to an apartment door, pale morning light",
+        "close-up of wet footprints stopping on a doormat in front of an apartment door, morning light, eerie"
+      ]
+    },
+    {
+      "texte": "J'ai passé la journée aux archives de la ville. Et j'ai trouvé un plan de mille neuf cent soixante-deux. Mon immeuble avait quatre étages. Le dernier a été muré en novembre, juste après la disparition des habitants de l'appartement quarante-quatre.",
+      "visuels": [
+        "old dusty city archive room with tall shelves of folders, warm desk lamp, a young woman searching",
+        "old yellowed architectural blueprint of a four-storey building on a wooden desk under a lamp",
+        "a bricked-up doorway at the top of an old staircase, dust, cold light"
+      ]
+    },
+    {
+      "texte": "En rentrant, j'ai examiné l'ascenseur. Sous une petite plaque vissée, à côté des boutons, il y avait une serrure. Une serrure que je n'avais jamais vue. Exactement de la taille de ma clé.",
+      "visuels": [
+        "close-up of an antique elevator control panel with round brass buttons and a small hidden keyhole under a metal plate",
+        "a hand holding an antique brass key with a paper tag next to a small keyhole, dramatic light"
+      ]
+    },
+    {
+      "texte": "Il est trois heures trente-trois. Je suis dans l'ascenseur. Je tourne la clé. Et l'ascenseur commence à monter.",
+      "visuels": [
+        "inside a vintage wrought iron elevator cage at night, a young woman seen from behind, dim flickering light",
+        "elevator floor indicator lamp glowing red above closed elevator doors in total darkness"
+      ]
+    }
+  ],
+  "visuels_fin": [
+    "a dark corridor frozen in the 1960s with old wallpaper, an apartment door at the end slightly open with warm light, mysterious"
+  ],
+  "appel_action": "La fin de l'histoire, c'est demain, dans la partie trois. Abonne-toi pour découvrir ce qui l'attend au quatrième. Et toi, tu aurais tourné la clé ?",
+  "carton_fin": "La fin demain • Partie 3",
+  "legende": "Quelqu'un a frappé à sa porte à 3 h 33… et les traces de pas ne repartent pas 😨 Partie 2/3 de « L'Étage 4 ». Tu aurais tourné la clé ? (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": [
+    "#storytime",
+    "#histoire",
+    "#mystere",
+    "#frisson",
+    "#paranormal",
+    "#fiction",
+    "#pourtoi"
+  ],
+  "verif_faux_positifs": {
+    "D_N": "« à trois heures quarante-quatre pile » : « pile » est un adverbe invariable",
+    "NE_PLUS_INF": "« des traces de pas mouillées » est correct (participe adjectif)"
+  }
+}

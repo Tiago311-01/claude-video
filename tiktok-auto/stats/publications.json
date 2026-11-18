@@ -9,5 +9,14 @@
     "cree_le": "2026-11-18T20:39:28+00:00",
     "url": "https://www.tiktok.com/@rt_production_/video/7709614358640233750",
     "note": "publiée immédiatement à la demande de l'utilisateur (test) ; programmation du 19/11 18:45 annulée"
+  },
+  {
+    "id": "2026-11-19_etage4_p2",
+    "serie": "L'Étage 4",
+    "episode": 2,
+    "programme_le": "2026-11-19T18:45:00+01:00",
+    "postSubmissionId": "bca0f17c-b2c8-4887-a97e-b385b4b0f4bb",
+    "statut": "scheduled",
+    "cree_le": "2026-11-18T21:38:59+00:00"
   }
 ]
