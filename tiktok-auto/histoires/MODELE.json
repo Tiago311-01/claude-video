@@ -1,0 +1,54 @@
+{
+  "_aide": "Copier ce fichier en histoires/AAAA-MM-JJ_<serie>_pN.json. Champs optionnels : serie, episode, couleur [R,G,B], voix (fr-FR-HenriNeural, fr-FR-DeniseNeural, fr-FR-RemyMultilingualNeural, fr-FR-VivienneMultilingualNeural), debit, hauteur, ambiance (mystere|suspense|paranormal|destin), palette (repli procédural : nuit|sang|brume|or), carton_fin (le caractère • sépare les lignes), mention. 'visuel' = description EN ANGLAIS de l'image à générer (sans personnage protégé, sans texte).",
+  "id": "AAAA-MM-JJ_serie_p1",
+  "serie": "L'Étage 4",
+  "episode": 1,
+  "episodes_prevus": 3,
+  "titre": "L'Étage 4 — Partie 1",
+  "titre_ecran": "L'ascenseur qui monte au 4e",
+  "ambiance": "mystere",
+  "palette": "nuit",
+  "couleur": [
+    255,
+    210,
+    0
+  ],
+  "voix": "fr-FR-HenriNeural",
+  "debit": "+6%",
+  "hauteur": "-2Hz",
+  "accroche": "Mon immeuble n'a que trois étages. Alors pourquoi l'ascenseur s'arrête-t-il au quatrième, chaque nuit, à trois heures trente-trois ?",
+  "scenes": [
+    {
+      "texte": "Je m'appelle Léa. Je suis arrivée dans cet immeuble de Lyon en septembre. Un vieux bâtiment, trois étages, six appartements. Tout était parfait. Jusqu'à la première nuit.",
+      "visuel": "old french apartment building at night in Lyon, rain, wet cobblestones, one single lit window on the top floor, lonely streetlamp, fog"
+    },
+    {
+      "texte": "À trois heures trente-trois, j'ai entendu l'ascenseur. Ce grincement métallique, puis la sonnerie. J'ai regardé par le judas. Les portes s'ouvraient sur mon palier, et le voyant indiquait le quatrième étage.",
+      "visuel": "vintage wrought iron elevator cage in a dark old hallway at night, doors half open, eerie red glow from the floor indicator lamp, dust in the air"
+    },
+    {
+      "texte": "Le lendemain, j'en ai parlé à la gardienne. Elle a pâli. Il n'y a jamais eu de quatrième étage ici, m'a-t-elle dit. Puis elle a ajouté, tout bas : sauf pour ceux qui ont reçu la lettre.",
+      "visuel": "elderly concierge woman with a pale worried face in a dim old building lobby, mailboxes in the background, cold blue light, cinematic portrait"
+    },
+    {
+      "texte": "Ce soir-là, en rentrant, j'ai trouvé une enveloppe sous ma porte. Pas de timbre. Pas d'adresse. Juste mon prénom, écrit à l'encre rouge. Et à l'intérieur, une clé ancienne, avec une étiquette : appartement quarante-quatre.",
+      "visuel": "old cream envelope on a wooden parquet floor under an apartment door, an antique brass key with a small paper tag beside it, warm candlelight, close-up"
+    },
+    {
+      "texte": "Il est trois heures trente et une. J'entends l'ascenseur qui monte. Et cette fois, quelqu'un frappe à ma porte.",
+      "visuel": "silhouette of a young woman standing in a dark apartment facing the front door, thin line of light under the door with the shadow of two feet, horror atmosphere"
+    }
+  ],
+  "appel_action": "La suite demain, dans la partie deux. Abonne-toi pour ne pas la rater. Et dis-moi en commentaire : toi, tu ouvrirais ?",
+  "carton_fin": "Partie 2 demain • Abonne-toi",
+  "legende": "Son immeuble n'a que 3 étages… mais l'ascenseur monte au 4e chaque nuit 😨 Partie 1/3. Toi, tu ouvrirais ? (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": [
+    "#storytime",
+    "#histoire",
+    "#mystere",
+    "#frisson",
+    "#paranormal",
+    "#fiction",
+    "#pourtoi"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "video": "videos/2026-11-18_etage4_p1.mp4",
+  "duree_s": 79.0,
+  "taille_mo": 81.5,
+  "volume": {
+    "I": -14.0,
+    "LRA": 2.7,
+    "peak": -2.0
+  },
+  "erreurs": [],
+  "avertissements": [],
+  "planche_contact": "videos/2026-11-18_etage4_p1.planche.jpg",
+  "a_faire_par_agent": "Ouvrir la planche contact et confirmer : sous-titres lisibles, visuels cohérents, aucun texte parasite."
+}

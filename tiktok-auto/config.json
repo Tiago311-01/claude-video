@@ -1,0 +1,8 @@
+{
+  "tiktok_username": null,
+  "blotato_account_id": null,
+  "fuseau": "Europe/Paris",
+  "creneaux": ["12:30", "18:45", "21:15"],
+  "max_par_jour": 3,
+  "langue": "fr"
+}
