@@ -1,0 +1,87 @@
+{
+  "id": "2026-11-18_etage4_p1_v2",
+  "serie": "L'Étage 4",
+  "episode": 1,
+  "episodes_prevus": 3,
+  "titre": "L'Étage 4 — Partie 1",
+  "titre_ecran": "L'ascenseur qui monte au 4e",
+  "ambiance": "mystere",
+  "palette": "nuit",
+  "couleur": [
+    255,
+    210,
+    0
+  ],
+  "accroche": "Mon immeuble n'a que trois étages. Alors pourquoi l'ascenseur s'arrête-t-il au quatrième, chaque nuit, à trois heures trente-trois ?",
+  "scenes": [
+    {
+      "texte": "Je m'appelle Léa. Je suis arrivée dans cet immeuble de Lyon en septembre. Un vieux bâtiment, trois étages, six appartements. Tout était parfait. Jusqu'à la première nuit.",
+      "visuels": [
+        "old french apartment building at night in Lyon, rain, wet cobblestones, one single lit window, lonely streetlamp, fog",
+        "young woman with cardboard moving boxes in a cozy old parisian-style apartment, warm evening light",
+        "young woman asleep in bed in a dark old apartment, moonlight through the window, unsettling atmosphere"
+      ]
+    },
+    {
+      "texte": "À trois heures trente-trois, j'ai entendu l'ascenseur. Ce grincement métallique, puis la sonnerie. J'ai regardé par le judas. Les portes s'ouvraient sur mon palier, et le voyant indiquait le quatrième étage.",
+      "visuels": [
+        "vintage wrought iron elevator cage in a dark old hallway at night, doors half open, eerie red glow from the floor indicator lamp, dust in the air",
+        "close-up of a young woman's frightened eye looking through a door peephole in the dark",
+        "distorted fisheye view through a door peephole of an empty dark landing with elevator doors opening"
+      ]
+    },
+    {
+      "texte": "Le lendemain, j'en ai parlé à la gardienne. Elle a pâli. Il n'y a jamais eu de quatrième étage ici, m'a-t-elle dit. Puis elle a ajouté, tout bas : sauf pour ceux qui ont reçu la lettre.",
+      "visuels": [
+        "elderly concierge woman with a pale worried face in a dim old building lobby, mailboxes in the background, cold blue light, cinematic portrait",
+        "close-up of an old woman's wrinkled hands trembling, holding a set of old keys, dim light",
+        "elderly woman whispering in the shadow of an old staircase, mysterious, cold light"
+      ]
+    },
+    {
+      "texte": "Ce soir-là, en rentrant, j'ai trouvé une enveloppe sous ma porte. Pas de timbre. Pas d'adresse. Juste mon prénom, écrit à l'encre rouge. Et à l'intérieur, une clé ancienne, avec une étiquette : appartement quarante-quatre.",
+      "visuels": [
+        "old cream envelope on a wooden parquet floor under an apartment door, warm candlelight, close-up",
+        "a handwritten name in red ink on an old envelope, no readable text, dramatic close-up",
+        "an antique brass key with a small paper tag lying in an open hand, candlelight"
+      ]
+    },
+    {
+      "texte": "Il est trois heures trente et une. J'entends l'ascenseur qui monte. Et cette fois, quelqu'un frappe à ma porte.",
+      "visuels": [
+        "silhouette of a young woman standing in a dark apartment facing the front door, thin line of light under the door with the shadow of two feet, horror atmosphere",
+        "bedside alarm clock glowing in a dark bedroom at night, young woman awake in the background"
+      ]
+    }
+  ],
+  "appel_action": "La suite demain, dans la partie deux. Abonne-toi pour ne pas la rater. Et dis-moi en commentaire : toi, tu ouvrirais ?",
+  "carton_fin": "Partie 2 demain • Abonne-toi",
+  "legende": "Son immeuble n'a que 3 étages… mais l'ascenseur monte au 4ᵉ chaque nuit 😨 Partie 1/3. Toi, tu ouvrirais ? (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": [
+    "#storytime",
+    "#histoire",
+    "#mystere",
+    "#frisson",
+    "#paranormal",
+    "#fiction",
+    "#pourtoi"
+  ],
+  "creneau": "18:45",
+  "verif_faux_positifs": {
+    "AGREEMENT_PARTICULAR": "« jamais eu de quatrième étage » est correct (singulier)",
+    "VIRGULE_DEBUT_DE_PHRASE": "« Puis elle a ajouté » ne demande pas de virgule",
+    "DETERMINER_SENT_END": "« trois heures trente et une. » est une heure complète"
+  },
+  "narrateur": {
+    "nom": "Léa",
+    "genre": "femme"
+  },
+  "remplace": "2026-11-18_etage4_p1",
+  "visuels_accroche": [
+    "old french apartment building at night with only three floors, a strange faint light glowing above the roof as if from a fourth floor, fog, rain",
+    "vintage elevator floor indicator glowing red in a dark hallway at night"
+  ],
+  "visuels_fin": [
+    "a dark corridor with an elevator at the end, its doors slowly opening onto pure darkness, horror atmosphere"
+  ]
+}
