@@ -5,10 +5,10 @@
     "episode": 1,
     "programme_le": "2026-11-18T21:45:00+01:00",
     "postSubmissionId": "0ed91240-e332-424a-876b-1c83e795f210",
-    "statut": "published",
+    "statut": "supprimee",
     "cree_le": "2026-11-18T20:39:28+00:00",
     "url": "https://www.tiktok.com/@rt_production_/video/7709614358640233750",
-    "note": "publiée immédiatement à la demande de l'utilisateur (test) ; programmation du 19/11 18:45 annulée"
+    "note": "publiée immédiatement à la demande de l'utilisateur (test) ; programmation du 19/11 18:45 annulée ; supprimée par l'utilisateur le 18/11 (remplacée par la v2 : voix de femme, plus d'images)"
   },
   {
     "id": "2026-11-19_etage4_p2",
@@ -18,5 +18,15 @@
     "postSubmissionId": "bca0f17c-b2c8-4887-a97e-b385b4b0f4bb",
     "statut": "scheduled",
     "cree_le": "2026-11-18T21:38:59+00:00"
+  },
+  {
+    "id": "2026-11-18_etage4_p1_v2",
+    "serie": "L'Étage 4",
+    "episode": 1,
+    "programme_le": "2026-11-18T23:04:54+01:00",
+    "postSubmissionId": "8d7e91f8-0120-4a68-b080-a066081cca7d",
+    "statut": "published",
+    "cree_le": "2026-11-18T22:04:55+00:00",
+    "url": "https://www.tiktok.com/@rt_production_/video/7709636116361628950"
   }
 ]

@@ -90,3 +90,12 @@ en « network secret » de l'environnement cloud). Si une connexion expire, l'in
   LanguageTool justifiés. **Programmée le 19/11 à 18 h 45** (postSubmissionId bca0f17c-…).
 - Prochain cycle : écrire et produire P3 (fin de série, voix de femme) pour le 20/11 à 18 h 45, puis lancer
   une 2ᵉ série au créneau de 21 h 15.
+
+### 2026-11-18 ~23 h 05 (Paris) — P1 remplacée (demande de l'utilisateur)
+- L'utilisateur a supprimé l'ancienne P1 (voix d'homme, 5 images) sur TikTok.
+- Nouvelle **P1 v2** (voix de femme pour Léa, 18 images / plans de ~4,5 s, 84 s, -14,8 LUFS, vérifiée)
+  **publiée immédiatement** : https://www.tiktok.com/@rt_production_/video/7709636116361628950
+- Nouvelle option : `publier.py programmer <json> --maintenant` (publication immédiate).
+- P2 reste programmée le 19/11 à 18 h 45 ; P3 à produire pour le 20/11 à 18 h 45.
+- Note : supprimer une vidéo déjà publiée n'est pas possible par l'API (Blotato/TikTok) : seulement
+  depuis l'appli TikTok, par l'utilisateur.

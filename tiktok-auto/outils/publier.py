@@ -4,6 +4,7 @@
 Usage :
     python3 outils/publier.py comptes                       # vérifie la connexion, liste les comptes TikTok
     python3 outils/publier.py programmer histoires/<id>.json  # envoie la vidéo et la programme au prochain créneau
+    python3 outils/publier.py programmer histoires/<id>.json --maintenant   # publication immédiate
     python3 outils/publier.py statut                        # met à jour le statut des publications en attente
 
 Clé API (jamais commitée) — par ordre de priorité :
@@ -136,7 +137,7 @@ def upload(video: Path) -> str:
     return j["publicUrl"]
 
 
-def programmer(story_path: Path):
+def programmer(story_path: Path, maintenant: bool = False):
     story = json.loads(story_path.read_text(encoding="utf-8"))
     video = ROOT / "videos" / f"{story['id']}.mp4"
     verif = video.with_suffix(".verif.json")
@@ -148,7 +149,8 @@ def programmer(story_path: Path):
         return
     acc = tiktok_account()
     url = upload(video)
-    slot = next_slot(pubs, story)
+    tz = ZoneInfo(cfg().get("fuseau", "Europe/Paris"))
+    slot = datetime.now(tz).replace(microsecond=0) if maintenant else next_slot(pubs, story)
     text = story["legende"].strip() + "\n\n" + " ".join(story.get("hashtags", []))
     body = {
         "post": {
@@ -166,13 +168,14 @@ def programmer(story_path: Path):
                 "videoCoverTimestamp": 1200,
             },
         },
-        "scheduledTime": slot.isoformat(),
     }
+    if not maintenant:
+        body["scheduledTime"] = slot.isoformat()
     res = check(api("POST", "/posts", json=body))
     pubs.append({
         "id": story["id"], "serie": story.get("serie"), "episode": story.get("episode"),
         "programme_le": slot.isoformat(), "postSubmissionId": res.get("postSubmissionId"),
-        "statut": "scheduled", "cree_le": datetime.now(ZoneInfo("UTC")).isoformat(timespec="seconds"),
+        "statut": "in-progress" if maintenant else "scheduled", "cree_le": datetime.now(ZoneInfo("UTC")).isoformat(timespec="seconds"),
     })
     save_pubs(pubs)
     print(json.dumps({"ok": True, "programme_le": slot.isoformat(), "postSubmissionId": res.get("postSubmissionId")}, ensure_ascii=False))
@@ -198,7 +201,7 @@ def main():
         if cmd == "comptes":
             print(json.dumps(check(api("GET", "/users/me/accounts", params={"platform": "tiktok"})), ensure_ascii=False, indent=2))
         elif cmd == "programmer":
-            programmer(Path(sys.argv[2]))
+            programmer(Path(sys.argv[2]), maintenant="--maintenant" in sys.argv)
         elif cmd == "statut":
             statut()
         else:
