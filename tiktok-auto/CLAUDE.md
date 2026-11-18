@@ -128,6 +128,9 @@ Toute faute signalée par LanguageTool est corrigée dans le JSON puis on régé
 python3 outils/publier.py programmer histoires/<id>.json
 ```
 Prochain créneau libre (12:30, 18:45, 21:15 heure de Paris, 3 par jour maximum), étiquette IA activée.
+Si la publication fonctionne de nouveau, programmer D'ABORD les vidéos en attente (vérifiées mais
+absentes de `stats/publications.json`), dans l'ordre des épisodes. Si leur MP4 manque (conteneur neuf),
+relancer `generer.py` puis `verifier.py` avant `programmer`.
 Code 2 = bloqué : la vidéo reste prête (le JSON suffit pour la régénérer), noter dans le journal.
 Les MP4 ne sont pas commités (trop lourds) : ils sont régénérables à l'identique depuis le JSON.
 
