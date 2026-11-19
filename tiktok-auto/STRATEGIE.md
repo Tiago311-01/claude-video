@@ -1,6 +1,6 @@
 # STRATÉGIE — mise à jour à chaque cycle
 
-_Dernière mise à jour : 2026-11-18 (cycle 1)_
+_Dernière mise à jour : 2026-11-19 (cycle 2)_
 
 ## Positionnement
 - **Une seule promesse** : « des histoires inventées qui donnent des frissons, en épisodes ».
@@ -38,6 +38,9 @@ _Dernière mise à jour : 2026-11-18 (cycle 1)_
   Noël inquiétant à préparer pour début décembre.
 - #storytime est un des hashtags les plus efficaces pour le visionnage complet.
 - Hashtags retenus : #storytime #histoire #mystere #frisson #paranormal #fiction #pourtoi (≤ 8).
+- 19/11 : les hashtags génériques (#fyp, #pourtoi, #viral) n'apportent rien selon Metricool ; 1 à 5 hashtags
+  précis aident l'algorithme à classer la vidéo → désormais **5 hashtags** : #storytime #mystere #frisson
+  #creepytiktok #fiction (adapter le 4ᵉ au thème). #CreepyTikTok / #ScaryTikTok pèsent des milliards de vues.
 
 ## Sons
 La consigne demande des sons de la bibliothèque commerciale TikTok. Or l'API de publication
@@ -59,7 +62,9 @@ générateur (donc libre de droits, zéro risque de retrait pour droits d'auteur
 4. Créneau : 18:45 vs 21:15.
 
 ## Feuille de route des séries
-- **L'Étage 4** (en cours, 3 épisodes, 18:45) — immeuble lyonnais, ascenseur qui s'arrête à un étage inexistant.
+- **L'Étage 4** (3 épisodes, 18:45) — P1 v2 publiée 18/11, P2 le 19/11, P3 (fin) le 20/11.
+- **Le Dernier Train** (3 épisodes, 18:45, à partir du 21/11, voix d'homme) — bible : histoires/series/dernier_train.md.
+  La fin de L'Étage 4 promet « une nouvelle histoire demain » : P1 obligatoire le 21/11.
 - À suivre : « Le Passager du dernier train » (destin incroyable), « La Boîte à musique » (paranormal,
   ambiance boîte à musique), série de Noël inquiétante pour décembre.
 

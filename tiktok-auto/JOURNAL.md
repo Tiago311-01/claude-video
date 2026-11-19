@@ -99,3 +99,19 @@ en « network secret » de l'environnement cloud). Si une connexion expire, l'in
 - P2 reste programmée le 19/11 à 18 h 45 ; P3 à produire pour le 20/11 à 18 h 45.
 - Note : supprimer une vidéo déjà publiée n'est pas possible par l'API (Blotato/TikTok) : seulement
   depuis l'appli TikTok, par l'utilisateur.
+
+### 2026-11-19 ~02 h (Paris) — Cycle 2 (automatique)
+1. Statut : P1 v2 publiée, P2 programmée le 19/11 à 18 h 45 (Blotato : scheduled).
+2. Stats : profil 406 abonnés (-1), 9 865 j'aime, 1 vidéo visible. P1 v2 : **28 vues**, 0 j'aime, 0 partage
+   après ~2 h 30 (publiée à 23 h, heure creuse). Trop tôt pour conclure.
+   Nouveau : `stats.py` lit maintenant la page publique de chaque vidéo publiée (vues, j'aime, commentaires,
+   partages, enregistrements).
+3. Décision : rien à abandonner encore. Remarque : le profil n'affiche qu'une vidéo (les 2 anciennes vidéos
+   du compte ne sont plus visibles — supprimées ou privées par l'utilisateur ? aucune action de ma part).
+4. Tendances (recherche web ; Creative Center toujours inaccessible) : les hashtags génériques (#fyp, #pourtoi)
+   n'aident pas, 1 à 5 hashtags précis oui → passage à 5 hashtags (#storytime #mystere #frisson #creepytiktok #fiction).
+5. **« L'Étage 4 » P3 (fin)** : 92 s, voix de femme, 20 images / 21 plans, -14,6 LUFS, 0 faute. Planche contrôlée :
+   « 4ᵉ » seul sur une ligne du titre → retour à la ligne corrigé dans le générateur, vidéo refaite.
+   Programmée le 20/11 à 18 h 45.
+6. Prochaine série prête à écrire : **« Le Dernier Train »** (voix d'homme, narrateur Thomas), P1 le 21/11 à
+   18 h 45 — promis à la fin de P3. Bible : histoires/series/dernier_train.md.

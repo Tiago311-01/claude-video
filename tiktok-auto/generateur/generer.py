@@ -449,6 +449,12 @@ def wrap(text: str, f, maxw: int, d: ImageDraw.ImageDraw) -> list[str]:
             cur = w
     if cur:
         lines.append(cur)
+    # évite un mot très court seul sur la dernière ligne (« 4ᵉ ») : on descend le dernier mot de l'avant-dernière ligne
+    if len(lines) > 1 and len(lines[-1]) <= 4 and " " in lines[-2]:
+        head, last = lines[-2].rsplit(" ", 1)
+        cand = last + " " + lines[-1]
+        if d.textlength(cand, font=f) <= maxw:
+            lines[-2], lines[-1] = head, cand
     return lines
 
 

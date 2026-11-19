@@ -46,6 +46,18 @@ const { chromium } = require('playwright');
     out = { ok: !!stats, captcha: !!captcha, profil: stats,
             videos: vids.map(v => ({ id: v.id, desc: (v.desc || '').slice(0, 80), cree: v.createTime, duree: v.video && v.video.duration, ...(v.stats || {}) })) };
   } catch (e) { out = { ok: false, erreur: String(e) }; }
+  // vues par vidéo : page publique de chaque vidéo publiée par l'automatisation
+  out.par_video = [];
+  for (const url of (process.argv[3] || '').split(',').filter(Boolean)) {
+    try {
+      await p.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      await p.waitForTimeout(4000);
+      const raw = await p.evaluate(() => { const s = document.getElementById('__UNIVERSAL_DATA_FOR_REHYDRATION__'); return s ? s.textContent : null; });
+      const j = raw && JSON.parse(raw);
+      const it = j && j.__DEFAULT_SCOPE__ && j.__DEFAULT_SCOPE__['webapp.video-detail'] && j.__DEFAULT_SCOPE__['webapp.video-detail'].itemInfo && j.__DEFAULT_SCOPE__['webapp.video-detail'].itemInfo.itemStruct;
+      out.par_video.push({ url, ok: !!it, ...(it ? { cree: it.createTime, ...(it.statsV2 || it.stats || {}) } : {}) });
+    } catch (e) { out.par_video.push({ url, ok: false, erreur: String(e) }); }
+  }
   console.log(JSON.stringify(out));
   await b.close();
 })();
@@ -61,7 +73,10 @@ def main():
     js = ROOT / "cache" / "stats.js"
     js.parent.mkdir(exist_ok=True)
     js.write_text(JS)
-    r = subprocess.run(["node", str(js), user], capture_output=True, text=True, timeout=180)
+    pubs_f = ROOT / "stats" / "publications.json"
+    pubs = json.loads(pubs_f.read_text(encoding="utf-8")) if pubs_f.exists() else []
+    urls = [x["url"] for x in pubs if x.get("statut") == "published" and x.get("url")][-10:]
+    r = subprocess.run(["node", str(js), user, ",".join(urls)], capture_output=True, text=True, timeout=400)
     line = next((l for l in r.stdout.splitlines()[::-1] if l.startswith("{")), "{}")
     data = json.loads(line)
     data["releve_le"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -74,6 +89,14 @@ def main():
         return 2
     prof = data["profil"]
     print(f"abonnés={prof.get('followerCount')} j'aime={prof.get('heartCount')} vidéos={prof.get('videoCount')}")
+    for v in data.get("par_video", []):
+        if v.get("ok"):
+            vues = int(v.get("playCount") or 0)
+            part = int(v.get("shareCount") or 0)
+            print(f"  {v['url'].rsplit('/', 1)[-1]} vues={vues} j'aime={v.get('diggCount')} com={v.get('commentCount')} "
+                  f"partages={part} enregistrements={v.get('collectCount')}" + (f" taux_partage={part / vues:.2%}" if vues else ""))
+        else:
+            print(f"  {v['url']} illisible")
     for v in data["videos"][:10]:
         vues = v.get("playCount") or 0
         part = v.get("shareCount") or 0

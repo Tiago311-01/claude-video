@@ -1,0 +1,63 @@
+{
+  "id": "2026-11-20_etage4_p3",
+  "serie": "L'Étage 4",
+  "episode": 3,
+  "episodes_prevus": 3,
+  "creneau": "18:45",
+  "titre": "L'Étage 4 — Partie 3 (fin)",
+  "titre_ecran": "Ce qui l'attendait au 4ᵉ",
+  "narrateur": {"nom": "Léa", "genre": "femme"},
+  "ambiance": "mystere",
+  "palette": "nuit",
+  "couleur": [255, 210, 0],
+  "accroche": "Au quatrième étage, le temps s'est arrêté en mille neuf cent soixante-deux. Et quelqu'un m'y attendait depuis soixante-quatre ans.",
+  "visuels_accroche": [
+    "vintage elevator doors opening onto a dark corridor frozen in the 1960s, flowered wallpaper, a single flickering bulb, eerie",
+    "a young woman seen from behind stepping out of an old elevator into a dusty 1960s corridor, warm dim light"
+  ],
+  "scenes": [
+    {
+      "texte": "Si tu arrives seulement : mon immeuble a trois étages, mais une vieille clé m'a ouvert le quatrième. Les portes se sont ouvertes sur un couloir figé. Papier peint à fleurs, odeur de cire, une ampoule qui grésille. Au bout, une porte entrouverte. L'appartement quarante-quatre.",
+      "visuels": [
+        "old french apartment building at night with three floors, faint glowing windows above the roof, fog",
+        "long dusty corridor with faded 1960s flowered wallpaper and a flickering bare bulb, cinematic",
+        "an apartment door slightly open at the end of a dark corridor, warm light spilling out, mysterious"
+      ]
+    },
+    {
+      "texte": "À l'intérieur, une table dressée pour quatre personnes. Les assiettes étaient propres. Les bougies, neuves. Et sur le mur, un calendrier arrêté au dix-huit novembre mille neuf cent soixante-deux.",
+      "visuels": [
+        "a 1960s dining room with a table set for four, clean plates, unlit candles, dust in the air, frozen in time",
+        "close-up of an old paper wall calendar from the 1960s on a faded wall, warm dim light, no readable text",
+        "young woman standing in a vintage 1960s living room, looking around in disbelief, soft light"
+      ]
+    },
+    {
+      "texte": "Sur la cheminée, il y avait une photo de famille. Quatre visages. Et au centre, une jeune femme que j'ai reconnue tout de suite. C'était la gardienne. Avec soixante ans de moins.",
+      "visuels": [
+        "an old black and white family photograph in a silver frame on a fireplace mantel, four people, 1960s",
+        "a young woman's hand picking up an old framed photograph, close-up, dramatic light",
+        "portrait of a young woman in 1960s clothing, black and white vintage photo style, mysterious smile"
+      ]
+    },
+    {
+      "texte": "Dans un tiroir, des dizaines de lettres. Toutes écrites à l'encre rouge. Toutes adressées à d'anciens locataires de l'immeuble. Aucun n'était jamais monté. J'étais la première.",
+      "visuels": [
+        "an open wooden drawer full of old envelopes tied with string, candlelight, close-up",
+        "dozens of old envelopes scattered on a wooden table, red ink handwriting, no readable text, moody light"
+      ]
+    },
+    {
+      "texte": "Quand je suis redescendue, la loge de la gardienne était vide. Ses affaires avaient disparu. Sur la porte, une étiquette neuve portait mon prénom. Et ce soir, c'est à moi de choisir qui recevra la lettre.",
+      "visuels": [
+        "an empty concierge lodge in an old building lobby at dawn, bare shelves, cold light",
+        "a young woman sitting at a desk at night writing a letter with a fountain pen, red ink, candlelight, mysterious"
+      ]
+    }
+  ],
+  "visuels_fin": ["an old envelope slid under an apartment door in a dark hallway, an antique brass key beside it, cinematic"],
+  "appel_action": "C'était la fin de L'Étage 4. Une nouvelle histoire arrive demain. Abonne-toi pour ne pas la rater. Et dis-moi en commentaire : à qui tu enverrais la lettre ?",
+  "carton_fin": "Fin • Nouvelle histoire demain",
+  "legende": "Ce qu'elle a trouvé au 4ᵉ étage… 😨 Partie 3/3, la fin de « L'Étage 4 ». À qui tu enverrais la lettre ? (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": ["#storytime", "#mystere", "#frisson", "#creepytiktok", "#fiction"]
+}
