@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "video": "videos/2026-11-19_pellicule.mp4",
+  "duree_s": 69.5,
+  "taille_mo": 71.8,
+  "volume": {
+    "I": -14.9,
+    "LRA": 2.6,
+    "peak": -4.4
+  },
+  "erreurs": [],
+  "avertissements": [],
+  "planche_contact": "videos/2026-11-19_pellicule.planche.jpg",
+  "a_faire_par_agent": "Ouvrir la planche contact et confirmer : sous-titres lisibles, visuels cohérents, aucun texte parasite."
+}

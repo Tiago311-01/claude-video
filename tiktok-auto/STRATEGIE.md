@@ -78,3 +78,7 @@ générateur (donc libre de droits, zéro risque de retrait pour droits d'auteur
   Une seule donnée : aucune décision. Hypothèses à tester si les 18 h 45 restent faibles :
   (a) première image plus forte (visage / élément choc plutôt qu'un décor sombre),
   (b) accroche plus courte (< 12 mots), (c) durée plus courte (~60-70 s).
+- 19/11 (cycle 4) — P1 v2 remonte : 90 vues, 5 j'aime (5,5 % j'aime/vue) en ~14 h.
+  Test lancé : **histoire courte autonome à 21 h 15** (« La pellicule de 1974 », 69 s, accroche de 13 mots,
+  image choc dès la 1ʳᵉ seconde). À comparer aux épisodes de 18 h 45 (vues à 24 h, j'aime/vue).
+  Si concluant : 1 série à 18 h 45 + 1 histoire courte à 21 h 15 chaque jour.

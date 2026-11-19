@@ -1,0 +1,52 @@
+{
+  "id": "2026-11-19_pellicule",
+  "format": "histoire courte autonome",
+  "creneau": "21:15",
+  "titre": "La pellicule de 1974",
+  "titre_ecran": "La pellicule de 1974",
+  "narrateur": {"nom": "Camille", "genre": "femme"},
+  "ambiance": "paranormal",
+  "palette": "sang",
+  "couleur": [255, 210, 0],
+  "accroche": "La pellicule datait de mille neuf cent soixante-quatorze. Les photos montraient ma chambre.",
+  "visuels_accroche": [
+    "an old faded vintage photograph of a young woman asleep in her bed, taken from the bedroom doorway at night, eerie, film grain",
+    "a vintage film camera lying on a wooden table under a single warm lamp, dark room, mysterious"
+  ],
+  "scenes": [
+    {
+      "texte": "Samedi, dans une brocante de Bordeaux, j'ai acheté un vieil appareil photo pour cinq euros. Il restait une pellicule à l'intérieur. Par curiosité, je l'ai fait développer.",
+      "visuels": [
+        "a flea market stall in an old french square on an autumn morning, antique objects, vintage cameras on a table",
+        "a young woman's hands holding an old film camera at a flea market, close-up, soft light"
+      ]
+    },
+    {
+      "texte": "Douze photos. La première : ma rue. La deuxième : ma porte d'entrée, avec le même paillasson rouge. La troisième : mon salon. Mes meubles. Mes livres. Prises il y a cinquante ans.",
+      "visuels": [
+        "a young woman spreading old developed photographs on a kitchen table, shocked expression, warm lamp light",
+        "an old faded 1970s photograph of a narrow french street with old buildings, film grain",
+        "an old faded photograph of an apartment front door with a red doormat, 1970s colors, film grain"
+      ]
+    },
+    {
+      "texte": "Une par une, les photos se rapprochaient. Le couloir. La porte de ma chambre. Puis moi, endormie dans mon lit.",
+      "visuels": [
+        "an old faded photograph of a dark apartment corridor at night, 1970s film grain, eerie",
+        "an old faded photograph of a bedroom door slightly open at night, film grain, unsettling"
+      ]
+    },
+    {
+      "texte": "La dernière photo était floue. On y voyait mon miroir. Et dans le reflet, derrière moi, quelqu'un tenait l'appareil. C'était la vendeuse de la brocante. Exactement la même. Elle n'avait pas vieilli d'un jour.",
+      "visuels": [
+        "a blurry old photograph of a bedroom mirror at night, a shadowy figure holding a camera in the reflection, horror atmosphere",
+        "portrait of a calm old woman flea market seller with a strange smile, autumn light, mysterious, cinematic"
+      ]
+    }
+  ],
+  "visuels_fin": ["an old vintage camera on a flea market table in the fog, nobody around, eerie"],
+  "appel_action": "Fin de l'histoire. Abonne-toi pour une nouvelle histoire chaque soir. Et toi, tu aurais regardé la dernière photo ?",
+  "carton_fin": "Abonne-toi • Une histoire chaque soir",
+  "legende": "Elle achète un vieil appareil photo à la brocante… les photos montrent sa chambre 😨 Histoire courte. Tu aurais regardé la dernière ? (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": ["#storytime", "#mystere", "#frisson", "#creepytiktok", "#fiction"]
+}

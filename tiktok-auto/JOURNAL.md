@@ -128,3 +128,12 @@ en « network secret » de l'environnement cloud). Si une connexion expire, l'in
    Hashtags : #storytime #mystere #frisson #train #fiction.
 5. Prochain cycle : P2 du Dernier Train (22/11) ou une histoire courte autonome au créneau de 21 h 15
    pour tester un 2ᵉ créneau quotidien.
+
+### 2026-11-19 ~14 h (Paris) — Cycle 4 (automatique)
+1. Statut : P2 ce soir 18 h 45, P3 le 20/11, Dernier Train P1 le 21/11 (toutes programmées).
+2. Stats : 406 abonnés, 9 870 j'aime. P1 v2 : **90 vues, 5 j'aime**, 0 commentaire, 0 partage (~14 h).
+3. Décision : continuer le format. Test d'un 2ᵉ créneau quotidien avec un format court autonome.
+4. **« La pellicule de 1974 »** (histoire courte, narratrice Camille → voix de femme) : 69,5 s, 17 images,
+   -14,9 LUFS, 0 faute, planche contrôlée. **Programmée ce soir 19/11 à 21 h 15.**
+5. Prochain cycle : Dernier Train P2 (22/11 18 h 45) ; nouvelle histoire courte pour le 20/11 à 21 h 15 si le
+   temps le permet (1 vidéo par cycle).
