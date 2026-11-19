@@ -137,3 +137,14 @@ en « network secret » de l'environnement cloud). Si une connexion expire, l'in
    -14,9 LUFS, 0 faute, planche contrôlée. **Programmée ce soir 19/11 à 21 h 15.**
 5. Prochain cycle : Dernier Train P2 (22/11 18 h 45) ; nouvelle histoire courte pour le 20/11 à 21 h 15 si le
    temps le permet (1 vidéo par cycle).
+
+### 2026-11-19 ~20 h (Paris) — Cycle 5 (automatique)
+1. Statut : **L'Étage 4 P2 publiée à 18 h 45** comme prévu (https://www.tiktok.com/@rt_production_/video/7709940130899070231).
+   « La pellicule de 1974 » programmée ce soir 21 h 15 ; P3 le 20/11 ; Dernier Train P1 le 21/11.
+2. Stats : 406 abonnés (stable), 9 871 j'aime. P1 v2 : **257 vues, 6 j'aime, 1 enregistrement** (~21 h).
+   P2 : 12 vues à 40 min.
+3. Décision : pas de changement (données encore insuffisantes, test du 21 h 15 en cours ce soir).
+   Point d'attention : 0 abonné gagné pour l'instant → à surveiller sur 3 vidéos.
+4. **« Le Dernier Train » P2** : voix d'homme, 92 s, 21 images, -15,4 LUFS, 0 faute, planche contrôlée.
+   **Programmée le 22/11 à 18 h 45.**
+5. Prochain cycle : Dernier Train P3 (23/11) ou nouvelle histoire courte à 21 h 15 selon le résultat du test.

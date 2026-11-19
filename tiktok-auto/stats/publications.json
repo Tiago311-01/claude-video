@@ -16,8 +16,9 @@
     "episode": 2,
     "programme_le": "2026-11-19T18:45:00+01:00",
     "postSubmissionId": "bca0f17c-b2c8-4887-a97e-b385b4b0f4bb",
-    "statut": "scheduled",
-    "cree_le": "2026-11-18T21:38:59+00:00"
+    "statut": "published",
+    "cree_le": "2026-11-18T21:38:59+00:00",
+    "url": "https://www.tiktok.com/@rt_production_/video/7709940130899070231"
   },
   {
     "id": "2026-11-18_etage4_p1_v2",
@@ -55,5 +56,14 @@
     "postSubmissionId": "af6459db-e359-419c-97a4-9332c6e5f75a",
     "statut": "scheduled",
     "cree_le": "2026-11-19T12:53:38+00:00"
+  },
+  {
+    "id": "2026-11-22_dernier_train_p2",
+    "serie": "Le Dernier Train",
+    "episode": 2,
+    "programme_le": "2026-11-22T18:45:00+01:00",
+    "postSubmissionId": "59aa1757-6e4c-47cc-afd5-5dd89103e225",
+    "statut": "scheduled",
+    "cree_le": "2026-11-19T19:03:30+00:00"
   }
 ]

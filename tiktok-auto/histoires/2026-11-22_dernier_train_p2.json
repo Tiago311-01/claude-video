@@ -1,0 +1,62 @@
+{
+  "id": "2026-11-22_dernier_train_p2",
+  "serie": "Le Dernier Train",
+  "episode": 2,
+  "episodes_prevus": 3,
+  "creneau": "18:45",
+  "titre": "Le Dernier Train — Partie 2",
+  "titre_ecran": "L'homme sur la photo de 1987",
+  "narrateur": {"nom": "Thomas", "genre": "homme"},
+  "ambiance": "suspense",
+  "palette": "brume",
+  "couleur": [255, 210, 0],
+  "accroche": "Sur une photo de journal de mille neuf cent quatre-vingt-sept, j'ai reconnu le passager. Il n'avait pas pris une ride.",
+  "visuels_accroche": [
+    "an old yellowed 1980s newspaper photograph of a crowd on a train platform, one man in a long dark coat in the background, grainy, no readable text",
+    "close-up of a man's shocked face lit by a desk lamp at night, looking at an old newspaper"
+  ],
+  "scenes": [
+    {
+      "texte": "Si tu as raté la partie un : chaque nuit, mon train s'arrête dans une gare fermée depuis mille neuf cent quatre-vingt-sept. Hier, un vieil homme y est monté, avec un billet daté du lendemain. Il m'a dit : ne prends pas le train de vendredi. Et il a oublié une montre. La même que la mienne.",
+      "visuels": [
+        "an overgrown abandoned railway platform at night with fog and a stopped station clock",
+        "an old man in a long wet coat sitting in a night train, calm and mysterious, cinematic",
+        "two identical old wristwatches in a man's open hand, both stopped, close-up"
+      ]
+    },
+    {
+      "texte": "Le lendemain, je suis allé aux archives du journal local. Pourquoi cette gare avait-elle fermé ? J'ai trouvé la réponse en quelques minutes. Une nuit de novembre mille neuf cent quatre-vingt-sept, un train a failli percuter un camion bloqué sur la voie.",
+      "visuels": [
+        "a man searching through old newspaper archives in a dim library at night, stacks of yellowed papers",
+        "a dramatic night scene of an old 1980s train with bright headlights approaching a truck stuck on railway tracks, fog, no text",
+        "close-up of a man's finger on an old yellowed newspaper page, grainy photo, no readable text"
+      ]
+    },
+    {
+      "texte": "Il n'y a eu aucune victime. L'aiguilleur a arrêté le train à temps. Dans l'article, il racontait qu'un inconnu était venu le prévenir, quelques minutes avant. Un homme en manteau mouillé. Alors qu'il ne pleuvait pas.",
+      "visuels": [
+        "a 1980s railway signalman in a small signal box at night pulling a large lever, urgent, dramatic light",
+        "a mysterious man in a long wet dark coat standing in the doorway of an old signal box at night, fog"
+      ]
+    },
+    {
+      "texte": "Sur la photo de l'article, au fond, on voyait cet inconnu. Le visage un peu flou. Mais c'était lui. Le passager d'hier. Le même manteau. Le même regard. Trente-neuf ans plus tôt, et pas une ride de plus.",
+      "visuels": [
+        "a grainy black and white 1980s photograph of a train station at night, a blurry man in a long coat in the background, mysterious",
+        "a man holding a magnifying glass over an old black and white photograph, close-up, lamp light"
+      ]
+    },
+    {
+      "texte": "Ce matin, j'ai reçu mon planning de la semaine. Je l'ai lu deux fois. Vendredi, je suis de service. Sur le dernier train. Celui de vingt-trois heures cinquante-huit.",
+      "visuels": [
+        "a man in a train conductor uniform reading a paper schedule in a locker room, worried expression, cold light",
+        "a night train waiting at an empty modern station platform under a clock, fog, ominous"
+      ]
+    }
+  ],
+  "visuels_fin": ["a lonely night train disappearing into thick fog on a railway at night, red tail lights, cinematic"],
+  "appel_action": "La fin de l'histoire, c'est demain, dans la partie trois. Abonne-toi pour savoir ce qui l'attend vendredi. Et toi, tu monterais dans ce train ?",
+  "carton_fin": "La fin demain • Partie 3",
+  "legende": "L'inconnu qui a sauvé un train en 1987… c'est le passager d'hier. Et il n'a pas vieilli 😨 Partie 2/3 du « Dernier Train ». Tu monterais dans ce train ? (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": ["#storytime", "#mystere", "#frisson", "#train", "#fiction"]
+}
