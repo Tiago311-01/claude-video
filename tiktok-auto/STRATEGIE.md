@@ -1,6 +1,6 @@
 # STRATÉGIE — mise à jour à chaque cycle
 
-_Dernière mise à jour : 2026-11-19 (cycle 2)_
+_Dernière mise à jour : 2026-11-19 (cycle 3)_
 
 ## Positionnement
 - **Une seule promesse** : « des histoires inventées qui donnent des frissons, en épisodes ».
@@ -73,3 +73,8 @@ générateur (donc libre de droits, zéro risque de retrait pour droits d'auteur
   pas assez d'images (1 toutes les 12-15 s). Corrigé dans le générateur à partir de P2.
 - 18/11 — Le service d'images gratuit limite à 1 image / 45 s par IP et refuse les graines > ~1 million :
   téléchargements séquentiels espacés de 47 s.
+
+- 19/11 (cycle 3) — P1 v2 : 37 vues, 0 j'aime en ~8 h (publiée à 23 h, après suppression d'une 1ʳᵉ version).
+  Une seule donnée : aucune décision. Hypothèses à tester si les 18 h 45 restent faibles :
+  (a) première image plus forte (visage / élément choc plutôt qu'un décor sombre),
+  (b) accroche plus courte (< 12 mots), (c) durée plus courte (~60-70 s).

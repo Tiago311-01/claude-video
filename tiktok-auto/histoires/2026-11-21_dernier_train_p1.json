@@ -1,0 +1,82 @@
+{
+  "id": "2026-11-21_dernier_train_p1",
+  "serie": "Le Dernier Train",
+  "episode": 1,
+  "episodes_prevus": 3,
+  "creneau": "18:45",
+  "titre": "Le Dernier Train — Partie 1",
+  "titre_ecran": "La gare fermée depuis 1987",
+  "narrateur": {
+    "nom": "Thomas",
+    "genre": "homme"
+  },
+  "ambiance": "suspense",
+  "palette": "brume",
+  "couleur": [
+    255,
+    210,
+    0
+  ],
+  "accroche": "Chaque nuit, mon train s'arrête trente secondes dans une gare fermée depuis mille neuf cent quatre-vingt-sept. Personne ne monte jamais. Sauf hier soir.",
+  "visuels_accroche": [
+    "an old abandoned train station platform at night, broken lamps, fog, a modern night train slowing down, cinematic",
+    "close-up of a train door opening onto a dark foggy abandoned platform at night"
+  ],
+  "scenes": [
+    {
+      "texte": "Je m'appelle Thomas. Je suis contrôleur dans les trains de nuit. Sur ma ligne, il y a une gare abandonnée. Les quais sont envahis par les herbes, l'horloge est arrêtée. Pourtant, chaque nuit à vingt-trois heures cinquante-huit, le train y marque un arrêt. Personne ne sait pourquoi.",
+      "visuels": [
+        "a young male train conductor in a dark uniform walking down the aisle of an empty night train, dim blue lights",
+        "an overgrown abandoned railway platform at night with weeds and a stopped old station clock, fog",
+        "view from a night train window of a dark abandoned station passing slowly, reflections on the glass"
+      ]
+    },
+    {
+      "texte": "Hier soir, les portes se sont ouvertes, et un homme est monté. Un vieil homme, avec un long manteau trempé, alors qu'il ne pleuvait pas. Il s'est assis en face de moi, comme s'il me connaissait depuis toujours.",
+      "visuels": [
+        "an old man in a long soaking wet dark coat stepping into a train at night, water dripping, mysterious",
+        "an old man with a wet coat sitting alone in a night train compartment, staring calmly, cinematic portrait",
+        "close-up of water dripping from the hem of a wet coat onto a train floor, dim light"
+      ]
+    },
+    {
+      "texte": "J'ai demandé son billet. Il me l'a tendu. Il était poinçonné, en règle. Mais il était daté de demain. Et avant que je dise quoi que ce soit, il a prononcé mon prénom.",
+      "visuels": [
+        "close-up of an old wrinkled hand holding out a paper train ticket in a dim train carriage",
+        "close-up of a punched paper train ticket under a flashlight beam, no readable text",
+        "a young train conductor frozen in shock, looking at an old passenger, dramatic lighting"
+      ]
+    },
+    {
+      "texte": "Thomas, a-t-il dit doucement. Ne prends pas le train de vendredi. Puis il s'est levé, et il est descendu à la gare suivante. Une gare qui n'existe sur aucun plan de la ligne.",
+      "visuels": [
+        "an old man in a wet coat stepping off a train onto a foggy platform at night, seen from behind",
+        "a mysterious tiny train station lit by a single lamp in the middle of a dark forest, fog, eerie",
+        "a night train leaving a foggy platform, red tail lights fading into darkness"
+      ]
+    },
+    {
+      "texte": "Sur son siège, il avait oublié une montre. J'ai cru que mon cœur s'arrêtait. C'était exactement la même que la mienne. Même rayure sur le verre. Arrêtée à vingt-trois heures cinquante-huit.",
+      "visuels": [
+        "an old wristwatch lying on an empty train seat under a dim light, close-up",
+        "two identical old wristwatches side by side in a man's open hand, both stopped, dramatic close-up"
+      ]
+    }
+  ],
+  "visuels_fin": [
+    "a lonely night train crossing a foggy bridge under the moon, cinematic, mysterious"
+  ],
+  "appel_action": "La suite demain, dans la partie deux. Abonne-toi pour savoir qui est cet homme. Et toi, tu prendrais le train de vendredi ?",
+  "carton_fin": "Partie 2 demain • Abonne-toi",
+  "legende": "Son train s'arrête chaque nuit dans une gare fermée depuis 1987… et hier, quelqu'un est monté 😨 Partie 1/3. Tu prendrais le train de vendredi ? (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": [
+    "#storytime",
+    "#mystere",
+    "#frisson",
+    "#train",
+    "#fiction"
+  ],
+  "verif_faux_positifs": {
+    "VIRGULE_DEBUT_DE_PHRASE": "« Puis il s'est levé » ne demande pas de virgule"
+  }
+}

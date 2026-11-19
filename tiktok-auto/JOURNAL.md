@@ -115,3 +115,16 @@ en « network secret » de l'environnement cloud). Si une connexion expire, l'in
    Programmée le 20/11 à 18 h 45.
 6. Prochaine série prête à écrire : **« Le Dernier Train »** (voix d'homme, narrateur Thomas), P1 le 21/11 à
    18 h 45 — promis à la fin de P3. Bible : histoires/series/dernier_train.md.
+
+### 2026-11-19 ~08 h 15 (Paris) — Cycle 3 (automatique)
+1. Statut : P2 (19/11 18 h 45) et P3 (20/11 18 h 45) programmées ; P1 v2 en ligne.
+2. Stats : 406 abonnés, 9 865 j'aime. P1 v2 : **37 vues, 0 j'aime, 0 partage** en ~8 h.
+3. Décision : une seule donnée, publiée à 23 h → pas de changement de format. Hypothèses notées dans
+   STRATEGIE.md (première image plus forte, accroche plus courte, durée plus courte) à tester si les
+   publications de 18 h 45 restent faibles.
+4. **« Le Dernier Train » P1** produite : narrateur Thomas → voix d'homme (fr-FR-HenriNeural), 86 s,
+   20 images / 20 plans, -15,4 LUFS. 1 faux positif LanguageTool justifié (« Puis il s'est levé »).
+   Planche contrôlée. **Programmée le 21/11 à 18 h 45** (tenue de la promesse de fin de L'Étage 4).
+   Hashtags : #storytime #mystere #frisson #train #fiction.
+5. Prochain cycle : P2 du Dernier Train (22/11) ou une histoire courte autonome au créneau de 21 h 15
+   pour tester un 2ᵉ créneau quotidien.

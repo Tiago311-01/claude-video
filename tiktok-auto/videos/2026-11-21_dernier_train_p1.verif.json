@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "video": "videos/2026-11-21_dernier_train_p1.mp4",
+  "duree_s": 86.4,
+  "taille_mo": 89.1,
+  "volume": {
+    "I": -15.4,
+    "LRA": 1.8,
+    "peak": -4.1
+  },
+  "erreurs": [],
+  "avertissements": [],
+  "planche_contact": "videos/2026-11-21_dernier_train_p1.planche.jpg",
+  "a_faire_par_agent": "Ouvrir la planche contact et confirmer : sous-titres lisibles, visuels cohérents, aucun texte parasite."
+}
