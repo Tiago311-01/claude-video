@@ -1,0 +1,54 @@
+{
+  "id": "2026-11-21_livre_dor",
+  "format": "histoire courte autonome",
+  "creneau": "21:15",
+  "titre": "Le livre d'or",
+  "titre_ecran": "Ne regardez pas sous le lit",
+  "narrateur": {"nom": "Hugo", "genre": "homme"},
+  "ambiance": "paranormal",
+  "palette": "brume",
+  "couleur": [255, 210, 0],
+  "test": "question d'engagement affichée en grand à la fin (au lieu de « Abonne-toi »)",
+  "accroche": "Dans le livre d'or de ma location, tout le monde avait écrit la même phrase.",
+  "visuels_accroche": [
+    "an old open guestbook on a wooden table, many handwritten lines, dramatic light, mysterious, close-up, illegible handwriting",
+    "dark space under a bed in a dim bedroom at night, shadows, horror atmosphere"
+  ],
+  "scenes": [
+    {
+      "texte": "Pour le week-end, j'avais loué un petit appartement à Annecy. Propre, pas cher, avec une vue sur le lac. Sur la table du salon, il y avait un livre d'or. Je l'ai ouvert en buvant mon café.",
+      "visuels": [
+        "a cozy small apartment with a window view of a mountain lake at dawn, Annecy style, soft light",
+        "a young man drinking coffee at a wooden table, opening an old leather guestbook, morning light"
+      ]
+    },
+    {
+      "texte": "Première page : ne regardez pas sous le lit. Deuxième page, une autre écriture : ne regardez pas sous le lit. Pendant des années, tous les voyageurs avaient écrit exactement la même phrase.",
+      "visuels": [
+        "close-up of old guestbook pages filled with different handwritings, illegible, warm light, unsettling",
+        "a young man flipping through guestbook pages faster and faster, worried face, cinematic",
+        "a neatly made bed in a quiet bedroom, a dark gap underneath, eerie stillness"
+      ]
+    },
+    {
+      "texte": "J'ai ri. Puis j'ai tourné jusqu'à la dernière page. La date d'aujourd'hui. Et la même phrase. Écrite avec mon écriture. Sauf que je n'avais encore rien écrit.",
+      "visuels": [
+        "close-up of a man's shocked face looking down at a book, cold light, dramatic",
+        "the last page of an old guestbook with a single fresh line of handwriting in blue ink, illegible, close-up"
+      ]
+    },
+    {
+      "texte": "Cette nuit-là, je n'ai pas dormi. Vers trois heures du matin, j'ai entendu un bruit, juste sous le lit. Un bruit doux, régulier. Comme quelqu'un qui tourne les pages d'un livre.",
+      "visuels": [
+        "a young man lying awake in bed in the dark, eyes wide open, moonlight, fear",
+        "a phone screen light on a bedside table at three in the morning, dark bedroom, eerie",
+        "a faint warm light glowing from under a bed in a dark bedroom, horror atmosphere"
+      ]
+    }
+  ],
+  "visuels_fin": ["an old guestbook lying open on the floor of a dark bedroom, moonlight, eerie"],
+  "appel_action": "Fin de l'histoire. Et toi, tu aurais regardé sous le lit ? Réponds oui ou non en commentaire.",
+  "carton_fin": "Tu aurais regardé ? • Oui ou non en commentaire",
+  "legende": "Dans le livre d'or de sa location, tout le monde a écrit la même phrase… même lui. 😨 Tu aurais regardé sous le lit ? Oui ou non 👇 (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": ["#storytime", "#mystere", "#frisson", "#creepytiktok", "#fiction"]
+}

@@ -173,3 +173,13 @@ en « network secret » de l'environnement cloud). Si une connexion expire, l'in
    sans sens (texte parasite) → image régénérée sans texte. **Programmée ce soir 20/11 à 21 h 15.**
    1ᵉʳ test réel du carton de fin interactif.
 5. Prochain cycle : nouvelle série pour le 24/11 (épisodes ~70 s), promise en fin du Dernier Train P3.
+
+### 2026-11-20 ~14 h 15 (Paris) — Cycle 8 (automatique)
+1. Statut : inchangé (L'Étage 4 P3 et « Vous êtes arrivée » ce soir ; Dernier Train 21-23/11).
+2. Stats : 404 abonnés, 9 880 j'aime. P2 276 vues, P1 v2 272, La pellicule 252. 0 commentaire, 0 partage.
+   Plafond confirmé.
+3. Décision : continuer le test du carton interactif (1ʳᵉ mesure demain après « Vous êtes arrivée »).
+4. **« Le livre d'or »** (courte, narrateur Hugo → voix d'homme) : 62,1 s, -15,5 LUFS, 0 faute.
+   Incident : service d'images saturé (HTTP 503) → 1 image de secours au 1ᵉʳ rendu ; 2ᵉ rendu = 0 image de secours.
+   **Programmée le 21/11 à 21 h 15.**
+5. Prochain cycle : nouvelle série (épisodes ~70 s) à partir du 24/11, 18 h 45.

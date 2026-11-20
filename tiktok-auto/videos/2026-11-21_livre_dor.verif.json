@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "video": "videos/2026-11-21_livre_dor.mp4",
+  "duree_s": 62.1,
+  "taille_mo": 64.2,
+  "volume": {
+    "I": -15.5,
+    "LRA": 2.2,
+    "peak": -4.2
+  },
+  "erreurs": [],
+  "avertissements": [],
+  "planche_contact": "videos/2026-11-21_livre_dor.planche.jpg",
+  "a_faire_par_agent": "Ouvrir la planche contact et confirmer : sous-titres lisibles, visuels cohérents, aucun texte parasite."
+}
