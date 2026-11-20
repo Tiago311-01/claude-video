@@ -183,3 +183,13 @@ en « network secret » de l'environnement cloud). Si une connexion expire, l'in
    Incident : service d'images saturé (HTTP 503) → 1 image de secours au 1ᵉʳ rendu ; 2ᵉ rendu = 0 image de secours.
    **Programmée le 21/11 à 21 h 15.**
 5. Prochain cycle : nouvelle série (épisodes ~70 s) à partir du 24/11, 18 h 45.
+
+### 2026-11-20 ~18 h 30 (Paris) — Récap demandé : 2 vidéos postées manuellement par l'utilisateur
+Trouvées via l'intégration publique du profil (le profil compte 5 vidéos, dont 3 publiées par l'automatisation).
+| Vidéo | Publiée (Paris) | Durée / format | Légende | Vues | J'aime | Com. | Partages |
+|---|---|---|---|---|---|---|---|
+| 7710240590385990944 | 20/11 14 h 11 | 30 s, horizontal 1024x576 | (aucune) | 187 | 20 | 0 | 0 |
+| 7710249267364908321 | 20/11 14 h 45 | 8 s, vertical 576x1024 | « #pourtoi #fyp » | 137 | 4 | 0 | 0 |
+Son : « son original » dans les deux cas. Contenu non visible sans connexion (non contourné).
+Lecture : la 1ʳᵉ a **10,7 % de j'aime/vue** (20/187) en ~4 h, contre 1 à 3 % pour nos vidéos → signal à suivre.
+Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part sur elles).
