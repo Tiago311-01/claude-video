@@ -36,17 +36,19 @@
     "episode": 3,
     "programme_le": "2026-11-20T18:45:00+01:00",
     "postSubmissionId": "bf8de134-f04a-4d49-ba9d-3778533c47f5",
-    "statut": "scheduled",
-    "cree_le": "2026-11-19T01:01:33+00:00"
+    "statut": "published",
+    "cree_le": "2026-11-19T01:01:33+00:00",
+    "url": "https://www.tiktok.com/@rt_production_/video/7710311218245864726"
   },
   {
     "id": "2026-11-21_dernier_train_p1",
     "serie": "Le Dernier Train",
     "episode": 1,
     "programme_le": "2026-11-21T18:45:00+01:00",
-    "postSubmissionId": "06fbbe17-14a0-4b3f-bdb3-741b94318125",
+    "postSubmissionId": "06b77aeb-dc64-4cba-8c14-4d659d6ac533",
     "statut": "scheduled",
-    "cree_le": "2026-11-19T06:53:20+00:00"
+    "cree_le": "2026-11-19T06:53:20+00:00",
+    "note": "remplacée par une nouvelle version (mouvement 3D)"
   },
   {
     "id": "2026-11-19_pellicule",
@@ -90,8 +92,9 @@
     "serie": null,
     "episode": null,
     "programme_le": "2026-11-21T21:15:00+01:00",
-    "postSubmissionId": "89f054f8-961a-498b-9a3d-67965c0fb95a",
+    "postSubmissionId": "9d43911c-82ec-40fa-9acf-f960e1b94471",
     "statut": "scheduled",
-    "cree_le": "2026-11-20T13:01:45+00:00"
+    "cree_le": "2026-11-20T13:01:45+00:00",
+    "note": "remplacée par une nouvelle version (mouvement 3D)"
   }
 ]

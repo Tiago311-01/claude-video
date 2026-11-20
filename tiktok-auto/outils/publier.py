@@ -181,14 +181,45 @@ def programmer(story_path: Path, maintenant: bool = False):
     print(json.dumps({"ok": True, "programme_le": slot.isoformat(), "postSubmissionId": res.get("postSubmissionId")}, ensure_ascii=False))
 
 
+def reprogrammer(story_path: Path):
+    """Remplace une vidéo déjà programmée (non publiée) par sa nouvelle version, au même créneau."""
+    story = json.loads(story_path.read_text(encoding="utf-8"))
+    pubs = load_pubs()
+    entry = next((p for p in pubs if p["id"] == story["id"] and p.get("statut") == "scheduled"), None)
+    if not entry:
+        raise RuntimeError("aucune programmation en attente pour cette histoire")
+    when = datetime.fromisoformat(entry["programme_le"])
+    items = check(api("GET", "/schedules")).get("items", [])
+    target = [it for it in items if datetime.fromisoformat(it["scheduledAt"].replace("Z", "+00:00")) == when]
+    if len(target) != 1:
+        raise RuntimeError(f"programmation introuvable ou ambiguë ({len(target)} trouvée(s))")
+    video = ROOT / "videos" / f"{story['id']}.mp4"
+    verif = video.with_suffix(".verif.json")
+    if not verif.exists() or not json.loads(verif.read_text())["ok"]:
+        raise RuntimeError("la nouvelle version n'a pas passé outils/verifier.py")
+    url = upload(video)  # envoi d'abord : si ça échoue, l'ancienne programmation reste en place
+    r = requests.delete(BASE + f"/schedules/{target[0]['id']}", headers={"blotato-api-key": load_key()}, timeout=60, verify=VERIFY)
+    if r.status_code >= 400:
+        raise RuntimeError(f"suppression de l'ancienne programmation impossible : HTTP {r.status_code}")
+    draft = target[0]["draft"]
+    draft["content"]["mediaUrls"] = [url]
+    res = check(api("POST", "/posts", json={"post": draft, "scheduledTime": when.isoformat()}))
+    entry["postSubmissionId"] = res.get("postSubmissionId")
+    entry["note"] = (entry.get("note", "") + " ; remplacée par une nouvelle version (mouvement 3D)").strip(" ;")
+    save_pubs(pubs)
+    print(json.dumps({"ok": True, "programme_le": when.isoformat(), "postSubmissionId": res.get("postSubmissionId")}, ensure_ascii=False))
+
+
 def statut():
     pubs = load_pubs()
     for p in pubs:
         if p.get("postSubmissionId") and p.get("statut") in ("scheduled", "in-progress"):
             j = check(api("GET", f"/posts/{p['postSubmissionId']}"))
             p["statut"] = j.get("status", p["statut"])
-            if j.get("publicUrl"):
+            if j.get("publicUrl") and "/video/" in j["publicUrl"]:
                 p["url"] = j["publicUrl"]
+            elif j.get("status") == "published" and "/video/" not in p.get("url", ""):
+                p["url"] = ""  # Blotato n'a donné que le profil : stats.py retrouvera la vidéo par sa légende
             if j.get("errorMessage"):
                 p["erreur"] = j["errorMessage"]
     save_pubs(pubs)
@@ -202,6 +233,8 @@ def main():
             print(json.dumps(check(api("GET", "/users/me/accounts", params={"platform": "tiktok"})), ensure_ascii=False, indent=2))
         elif cmd == "programmer":
             programmer(Path(sys.argv[2]), maintenant="--maintenant" in sys.argv)
+        elif cmd == "reprogrammer":
+            reprogrammer(Path(sys.argv[2]))
         elif cmd == "statut":
             statut()
         else:

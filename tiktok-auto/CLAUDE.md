@@ -68,6 +68,7 @@ Dossier : `tiktok-auto/` dans le dépôt `claude-video`, branche `claude/tiktok-
 cd /home/user/claude-video && git fetch origin claude/tiktok-autonomous-growth-8p5psf \
   && git checkout claude/tiktok-autonomous-growth-8p5psf && git pull --no-edit origin claude/tiktok-autonomous-growth-8p5psf
 cd tiktok-auto && pip install -q -r requirements.txt
+pip install -q --index-url https://download.pytorch.org/whl/cpu torch && pip install -q transformers opencv-python-headless  # mouvement 3D
 ```
 
 ### 1. Lire
@@ -129,6 +130,12 @@ Puis OUVRIR `videos/<id>.planche.jpg` (outil Read) et vérifier : sous-titres li
 cohérents avec le texte, pas d'artefact choquant, pas de texte parasite. Si un visuel est raté,
 changer sa description (ou ajouter `"graine": N` n'est pas prévu : reformuler) et régénérer.
 Toute faute signalée par LanguageTool est corrigée dans le JSON puis on régénère.
+
+### 6 bis. Mouvement
+Le public et l'algorithme veulent du MOUVEMENT (consigne de l'utilisateur, 20/11) : le générateur applique un
+mouvement de caméra 3D (profondeur Depth Anything V2 + parallaxe) à chaque plan. Vérifier dans le journal du rendu
+« mouvement 3D : activé » ; sinon installer torch/transformers/opencv (étape 0) et refaire la vidéo.
+Pour remplacer une vidéo déjà programmée : `python3 outils/publier.py reprogrammer histoires/<id>.json`.
 
 ### 7. Programmer
 ```bash

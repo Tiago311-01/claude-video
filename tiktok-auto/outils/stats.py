@@ -64,6 +64,43 @@ const { chromium } = require('playwright');
 """
 
 
+EMBED_JS = r"""
+const { chromium } = require('playwright');
+(async () => {
+  const b = await chromium.launch(); const p = await b.newPage({ locale: 'fr-FR' });
+  await p.goto('https://www.tiktok.com/embed/@' + process.argv[2], { waitUntil: 'domcontentloaded', timeout: 60000 });
+  await p.waitForTimeout(8000);
+  const st = await p.evaluate(() => { const s = document.querySelector('script#__FRONTITY_CONNECT_STATE__'); return s ? s.textContent : null; });
+  let out = [];
+  try { const j = JSON.parse(st); const d = j.source.data['/embed/@' + process.argv[2]]; out = d.videoList.map(v => ({ id: v.id, desc: v.desc })); } catch (e) {}
+  console.log(JSON.stringify(out)); await b.close();
+})();
+"""
+
+
+def resolve_missing_urls(user: str, pubs: list, pubs_f: Path):
+    """Pour les vidéos publiées dont Blotato n'a renvoyé que l'URL du profil, retrouve l'ID via la légende."""
+    todo = [x for x in pubs if x.get("statut") == "published" and "/video/" not in (x.get("url") or "")]
+    if not todo:
+        return
+    js = ROOT / "cache" / "embed.js"
+    js.write_text(EMBED_JS)
+    r = subprocess.run(["node", str(js), user], capture_output=True, text=True, timeout=150)
+    try:
+        vids = json.loads(next(l for l in r.stdout.splitlines()[::-1] if l.startswith("[")))
+    except (StopIteration, json.JSONDecodeError):
+        return
+    for x in todo:
+        try:
+            leg = json.loads((ROOT / "histoires" / f"{x['id']}.json").read_text(encoding="utf-8"))["legende"][:40]
+        except (OSError, KeyError, json.JSONDecodeError):
+            continue
+        hit = next((v for v in vids if (v.get("desc") or "").startswith(leg)), None)
+        if hit:
+            x["url"] = f"https://www.tiktok.com/@{user}/video/{hit['id']}"
+    pubs_f.write_text(json.dumps(pubs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def main():
     cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
     user = (cfg.get("tiktok_username") or "").lstrip("@")
@@ -75,6 +112,7 @@ def main():
     js.write_text(JS)
     pubs_f = ROOT / "stats" / "publications.json"
     pubs = json.loads(pubs_f.read_text(encoding="utf-8")) if pubs_f.exists() else []
+    resolve_missing_urls(user, pubs, pubs_f)
     urls = [x["url"] for x in pubs if x.get("statut") == "published" and x.get("url")][-10:]
     r = subprocess.run(["node", str(js), user, ",".join(urls)], capture_output=True, text=True, timeout=400)
     line = next((l for l in r.stdout.splitlines()[::-1] if l.startswith("{")), "{}")

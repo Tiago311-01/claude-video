@@ -193,3 +193,19 @@ Trouvées via l'intégration publique du profil (le profil compte 5 vidéos, don
 Son : « son original » dans les deux cas. Contenu non visible sans connexion (non contourné).
 Lecture : la 1ʳᵉ a **10,7 % de j'aime/vue** (20/187) en ~4 h, contre 1 à 3 % pour nos vidéos → signal à suivre.
 Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part sur elles).
+
+### 2026-11-20 ~20 h 40 (Paris) — Cycle 9 (automatique) + demandes de l'utilisateur
+- L'utilisateur a fourni (a) sa vidéo POV « jeton » (8 s, perso IA animé) et (b) une image ChatGPT d'horreur.
+  Image non utilisable telle quelle : tueur masqué façon Michael Myers (personnage protégé), couteau + sang
+  (risque de modération), et aperçu basse définition (568x630). Correction demandée à l'utilisateur.
+- Génération vidéo IA « vraie animation » : Canva = offre payante requise ; Hugging Face (Wan 2.2, FLUX) =
+  quota anonyme épuisé ; l'utilisateur refuse de créer un compte → **mouvement 3D local sans compte** :
+  profondeur Depth Anything V2 (modèle libre) + parallaxe + caméra. Démo envoyée (non publiée).
+- **Générateur : mouvement 3D intégré à toutes les vidéos** (Ken Burns en repli). Rendu ~5 min, inchangé.
+- Dernier Train P1 et « Le livre d'or » (demain) refaits en 3D et **reprogrammés aux mêmes créneaux**
+  (nouvelle commande `publier.py reprogrammer`).
+- L'Étage 4 P3 publiée à 18 h 45 : https://www.tiktok.com/@rt_production_/video/7710311218245864726
+  (Blotato n'avait renvoyé que l'URL du profil → `stats.py` retrouve désormais l'ID via la légende).
+- Stats : 402 abonnés. P2 286 vues, P1 v2 272, La pellicule 257. Toujours 0 commentaire.
+- Prochain cycle : nouvelle série (épisodes ~70 s, mouvement 3D) pour le 24/11 ; mise à niveau 3D de
+  Dernier Train P2/P3 si le temps le permet.

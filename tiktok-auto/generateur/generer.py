@@ -431,6 +431,58 @@ def ken_burns(im: Image.Image, p: float, idx: int) -> Image.Image:
     return im.transform((W, H), Image.AFFINE, (a, 0, x0, 0, a, y0), resample=Image.BICUBIC)
 
 
+# --------------------------------------------------------------------------------------
+# Mouvement 3D (parallaxe) : profondeur estimée par Depth Anything V2 (modèle libre, local, sans compte)
+# --------------------------------------------------------------------------------------
+def compute_depths(img_paths: list[str]) -> list[str | None]:
+    """Calcule une carte de profondeur (0 = loin, 1 = proche) par image. Repli : None (Ken Burns simple)."""
+    try:
+        from transformers import pipeline
+    except ImportError:
+        log("transformers/torch absents : mouvement 3D désactivé (pip install torch --index-url https://download.pytorch.org/whl/cpu transformers opencv-python-headless)")
+        return [None] * len(img_paths)
+    pipe = pipeline("depth-estimation", model="depth-anything/Depth-Anything-V2-Small-hf", device="cpu")
+    out = []
+    for ip in img_paths:
+        im = Image.open(ip).convert("RGB")
+        d = np.asarray(pipe(im.resize((im.width // 2, im.height // 2)))["depth"].resize(im.size, Image.BICUBIC), dtype=np.float32)
+        d = (d - d.min()) / (np.ptp(d) + 1e-6)
+        dp = ip.replace(".png", "_depth.npy")
+        np.save(dp, d.astype(np.float16))
+        out.append(dp)
+    return out
+
+
+def parallax(src: np.ndarray, depth: np.ndarray, p: float, idx: int) -> Image.Image:
+    """Vraie impression de mouvement de caméra : les plans proches bougent plus que le fond."""
+    import cv2
+
+    sh_, sw_ = depth.shape
+    rng = random.Random(idx * 7919)
+    e = 0.5 - 0.5 * math.cos(math.pi * p)
+    z = 1.0 + 0.05 * (e if idx % 2 == 0 else 1 - e)  # léger zoom global
+    ww = sw_ / z
+    a = ww / W
+    x0 = (sw_ - ww) / 2
+    y0 = (sh_ - H * a) / 2
+    if not hasattr(parallax, "grid"):
+        parallax.grid = np.mgrid[0:H, 0:W].astype(np.float32)
+    gy, gx = parallax.grid
+    bx = x0 + gx * a
+    by = y0 + gy * a
+    d = cv2.remap(depth, bx, by, cv2.INTER_LINEAR)
+    dirx = rng.choice([-1, 1]) * rng.uniform(0.6, 1.0)
+    diry = rng.uniform(-0.4, 0.4)
+    amp = 70.0  # pixels de décalage max pour le premier plan
+    push = 0.09 * e  # avancée de caméra (dolly) plus forte sur le premier plan
+    t_ = 2 * e - 1
+    cx, cy = sw_ / 2, sh_ / 2
+    mx = cx + (bx - cx) / (1 + push * d) - dirx * amp * t_ * (d - 0.4)
+    my = cy + (by - cy) / (1 + push * d) - diry * amp * t_ * (d - 0.4)
+    out = cv2.remap(src, mx, my, cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT)
+    return Image.fromarray(out)
+
+
 def draw_text_center(d: ImageDraw.ImageDraw, cx: int, y: int, text: str, f, fill, stroke=8, stroke_fill=(0, 0, 0)):
     bb = d.textbbox((0, 0), text, font=f, stroke_width=stroke)
     d.text((cx - (bb[2] - bb[0]) / 2 - bb[0], y - bb[1]), text, font=f, fill=fill, stroke_width=stroke, stroke_fill=stroke_fill)
@@ -539,6 +591,12 @@ def _render_range(args):
     frame_from, frame_to, ctx_path, out_path = args
     ctx = json.loads(Path(ctx_path).read_text())
     imgs = [Image.open(p) for p in ctx["img_paths"]]
+    arrs = [np.asarray(im.convert("RGB")) for im in imgs]
+    deps = [np.load(dp).astype(np.float32) if dp else None for dp in ctx.get("depth_paths", [None] * len(imgs))]
+
+    def move(i: int, p: float, idx: int) -> Image.Image:
+        return parallax(arrs[i], deps[i], p, idx) if deps[i] is not None else ken_burns(imgs[i], p, idx)
+
     vign = make_vignette()
     rng = np.random.default_rng(frame_from)
     grains = [rng.normal(0, 5, (H // 2, W // 2)).astype(np.float32) for _ in range(6)]
@@ -554,11 +612,11 @@ def _render_range(args):
         cur = next((i for i, s in enumerate(shots) if s["start"] <= t < s["end"]), len(shots) - 1)
         s = shots[cur]
         p = (t - s["start"]) / max(0.01, s["end"] - s["start"])
-        frame = ken_burns(imgs[s["img"]], p, cur)
+        frame = move(s["img"], p, cur)
         if cur > 0 and t - s["start"] < XFADE and shots[cur - 1]["img"] != s["img"]:
             pr = shots[cur - 1]
             pp = (t - pr["start"]) / max(0.01, pr["end"] - pr["start"])
-            prev = ken_burns(imgs[pr["img"]], min(1.0, pp), cur - 1)
+            prev = move(pr["img"], min(1.0, pp), cur - 1)
             frame = Image.blend(prev, frame, (t - s["start"]) / XFADE)
         arr = np.asarray(frame, dtype=np.float32)
         # légère respiration lumineuse
@@ -627,6 +685,8 @@ def main():
     with ThreadPoolExecutor(1) as ex:  # 1 seule requête à la fois (limite du service gratuit)
         img_paths = list(ex.map(_get, enumerate(keys)))
     log(f"{len(img_paths)} visuels prêts pour {len(shots)} plans")
+    depth_paths = compute_depths(img_paths) if story.get("mouvement_3d", True) else [None] * len(img_paths)
+    log("mouvement 3D : " + ("activé" if any(depth_paths) else "désactivé"))
 
     accent = story.get("couleur", [255, 210, 0])
     serie = story.get("serie")
@@ -634,6 +694,7 @@ def main():
     ctx = {
         "segs": [{k: v for k, v in s.items() if k not in ("texte", "voix", "visuels")} for s in segs],
         "shots": shots,
+        "depth_paths": depth_paths,
         "chunks": group_words(words),
         "total": total,
         "img_paths": img_paths,
