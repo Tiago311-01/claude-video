@@ -1,0 +1,68 @@
+{
+  "id": "2026-11-20_gps",
+  "format": "histoire courte autonome",
+  "creneau": "21:15",
+  "titre": "Vous êtes arrivée",
+  "titre_ecran": "Vous êtes arrivée chez vous",
+  "narrateur": {
+    "nom": "Inès",
+    "genre": "femme"
+  },
+  "ambiance": "paranormal",
+  "palette": "nuit",
+  "couleur": [
+    255,
+    210,
+    0
+  ],
+  "test": "question d'engagement affichée en grand à la fin (au lieu de « Abonne-toi »)",
+  "accroche": "Mon GPS m'a dit : vous êtes arrivée chez vous. J'étais en pleine forêt.",
+  "visuels_accroche": [
+    "a car GPS screen glowing in a dark car at night, a narrow forest road visible through the windshield, eerie, no readable text",
+    "a lonely car with headlights on a narrow road in a dark dense forest at night, fog, cinematic"
+  ],
+  "scenes": [
+    {
+      "texte": "Vendredi soir, je rentrais de Lyon par une petite route de campagne. Il était presque minuit. Pas de réseau, pas une lumière. Juste mes phares et la voix du GPS.",
+      "visuels": [
+        "a young woman driving alone at night, face lit by the dashboard, tired eyes, cinematic",
+        "view through a car windshield of a dark country road lit by headlights at night, fog, trees"
+      ]
+    },
+    {
+      "texte": "Soudain, il a dit : dans deux cents mètres, tournez à gauche. Il n'y avait qu'un chemin de terre entre les arbres. Je ne sais pas pourquoi, je l'ai pris.",
+      "visuels": [
+        "a narrow dirt path turning left into a dark forest, lit by car headlights at night, mysterious",
+        "car headlights moving slowly along a muddy forest track at night, branches, fog"
+      ]
+    },
+    {
+      "texte": "Au bout du chemin, une maison. Toutes les lumières allumées. Sur la boîte aux lettres, mon nom et mon prénom, écrits à la main.",
+      "visuels": [
+        "an isolated old stone house in a forest clearing at night with all windows lit warmly, fog, eerie",
+        "a woman's hand touching an old rusty plain metal mailbox on a wooden post at night, lit by car headlights, fog, plain surface, no text, no letters"
+      ]
+    },
+    {
+      "texte": "Je me suis approchée de la fenêtre. À l'intérieur, une femme dînait seule. Elle portait mon manteau. Elle a levé les yeux vers moi. C'était moi. Et elle m'a souri, comme si elle m'attendait depuis longtemps.",
+      "visuels": [
+        "a young woman looking through a lit window of a house at night from outside, seen from behind, fog",
+        "through a window, a young woman eating dinner alone at a wooden table, warm light, slightly uncanny",
+        "close-up of a young woman's face behind a window glass at night, calm unsettling smile, warm light"
+      ]
+    }
+  ],
+  "visuels_fin": [
+    "a car parked alone in front of an isolated lit house in a dark forest at night, fog, cinematic"
+  ],
+  "appel_action": "Fin de l'histoire. Et toi, tu aurais frappé à la porte ? Réponds oui ou non en commentaire.",
+  "carton_fin": "Tu aurais frappé ? • Oui ou non en commentaire",
+  "legende": "Son GPS l'emmène dans une maison au milieu de la forêt… avec son nom sur la boîte aux lettres. 😨 Tu aurais frappé ? Oui ou non 👇 (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": [
+    "#storytime",
+    "#mystere",
+    "#frisson",
+    "#creepytiktok",
+    "#fiction"
+  ]
+}

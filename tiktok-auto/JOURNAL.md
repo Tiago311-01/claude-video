@@ -161,3 +161,15 @@ en « network secret » de l'environnement cloud). Si une connexion expire, l'in
    de fin interactif vérifié. **Programmée le 23/11 à 18 h 45.**
 5. Prochain cycle : nouvelle série pour le 24/11 (promise en fin de P3), et/ou histoire courte à 21 h 15
    selon les vues à 24 h de « La pellicule ».
+
+### 2026-11-20 ~08 h 30 (Paris) — Cycle 7 (automatique)
+1. Statut : rien de nouveau publié depuis le cycle 6 ; L'Étage 4 P3 ce soir 18 h 45 ; Dernier Train P1-P3 les 21-23/11.
+2. Stats : 404 abonnés, 9 877 j'aime. P1 v2 272 vues (stable), P2 255, La pellicule 223 (~9 h). 0 commentaire, 0 partage.
+3. Analyse : **plafond vers 220-270 vues** par vidéo (pas de 2ᵉ vague de distribution). Le format court (61-69 s)
+   fait autant que les épisodes de 90 s. Décisions dans STRATEGIE.md : une histoire courte chaque soir à 21 h 15,
+   carton de fin « oui ou non en commentaire », prochaine série en épisodes plus courts.
+4. **« Vous êtes arrivée »** (courte, narratrice Inès → voix de femme) : 61,3 s, -14,5 LUFS. Vérification :
+   virgule superflue retirée du texte, point ajouté dans la légende ; planche : boîte aux lettres avec lettres
+   sans sens (texte parasite) → image régénérée sans texte. **Programmée ce soir 20/11 à 21 h 15.**
+   1ᵉʳ test réel du carton de fin interactif.
+5. Prochain cycle : nouvelle série pour le 24/11 (épisodes ~70 s), promise en fin du Dernier Train P3.

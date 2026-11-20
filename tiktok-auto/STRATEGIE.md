@@ -93,3 +93,9 @@ générateur (donc libre de droits, zéro risque de retrait pour droits d'auteur
   Prochain test (un seul changement) : la question d'engagement affichée EN GROS à l'écran pendant la fin
   (carton_fin = la question, ex. « TU SERAIS MONTÉ ? OUI / NON EN COMMENTAIRE ») au lieu de « Abonne-toi ».
   Les commentaires sont le signal qui déclenche la distribution.
+- 20/11 (cycle 7) — **Plafond observé** : chaque vidéo s'arrête vers 220-270 vues (P1 272 à 32 h, P2 255 à 12 h,
+  La pellicule 223 à 9 h). Typique d'une vidéo qui ne passe pas le premier palier de distribution faute de
+  rétention / d'interactions. Le format court (69 s) fait autant de vues que les épisodes (90 s) en moins de temps.
+  Décisions : (1) histoires courtes à 21 h 15 chaque jour en plus de la série de 18 h 45 ;
+  (2) carton de fin « question + oui ou non en commentaire » testé dès « Vous êtes arrivée » (20/11 21 h 15) ;
+  (3) prochaine série : épisodes plus courts (≈ 65-75 s, 170-190 mots) pour améliorer le taux de visionnage complet.
