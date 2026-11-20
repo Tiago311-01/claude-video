@@ -1,0 +1,80 @@
+{
+  "id": "2026-11-23_dernier_train_p3",
+  "serie": "Le Dernier Train",
+  "episode": 3,
+  "episodes_prevus": 3,
+  "creneau": "18:45",
+  "titre": "Le Dernier Train — Partie 3 (fin)",
+  "titre_ecran": "Vendredi, 23 h 58",
+  "narrateur": {
+    "nom": "Thomas",
+    "genre": "homme"
+  },
+  "ambiance": "suspense",
+  "palette": "brume",
+  "couleur": [
+    255,
+    210,
+    0
+  ],
+  "accroche": "Vendredi, vingt-trois heures cinquante-huit. Je savais ce qui allait arriver. Et je suis quand même monté dans le train.",
+  "visuels_accroche": [
+    "a young male train conductor standing at the open door of a night train, looking into thick fog, determined face, cinematic",
+    "a station clock in the fog showing almost midnight, dramatic, eerie"
+  ],
+  "scenes": [
+    {
+      "texte": "Si tu as raté le début : un vieil homme, monté dans une gare fermée, m'a dit de ne pas prendre le train de vendredi. Le même homme qui, en mille neuf cent quatre-vingt-sept, avait sauvé un train d'un accident. Et vendredi, j'étais de service.",
+      "visuels": [
+        "an old man in a long wet coat on a foggy abandoned railway platform at night, mysterious",
+        "a grainy 1980s photograph of a train station at night, a blurry man in a long coat in the background",
+        "a young train conductor in a locker room putting on his cap, serious expression, cold light"
+      ]
+    },
+    {
+      "texte": "Je ne pouvais pas laisser les passagers seuls. Alors je suis monté. J'ai marché de wagon en wagon. Une étudiante endormie. Un couple âgé. Un père et son fils. Toutes ces vies, dans mes mains.",
+      "visuels": [
+        "a young train conductor walking through the aisle of a night train carriage, few passengers, dim warm light",
+        "an elderly couple holding hands in a night train seat, soft light, peaceful",
+        "a father and his young son sleeping against the window of a night train, warm light"
+      ]
+    },
+    {
+      "texte": "À vingt-trois heures cinquante-six, j'ai couru jusqu'à la cabine. Dans le brouillard, droit devant, deux phares immobiles. Un camion, bloqué en travers de la voie. Exactement comme en mille neuf cent quatre-vingt-sept.",
+      "visuels": [
+        "a man running through a train corridor toward the driver cabin, motion blur, urgent, dramatic light",
+        "view from a train driver cabin at night of two truck headlights stuck on the railway tracks ahead in thick fog",
+        "a train driver pulling the emergency brake lever, sparks, dramatic close-up"
+      ]
+    },
+    {
+      "texte": "J'ai crié. Le conducteur a freiné de toutes ses forces. Le train s'est arrêté à quelques mètres. Personne n'a été blessé. Et en relevant la tête, je l'ai vu, sur le quai de la vieille gare.",
+      "visuels": [
+        "a night train stopped just a few meters from a truck on the tracks, steam and fog, headlights, cinematic",
+        "an old man in a long coat standing alone on a foggy abandoned platform at night, lit by train headlights"
+      ]
+    },
+    {
+      "texte": "Le vieil homme m'a souri. Il portait ma montre. Il avait mon visage, avec quarante ans de plus. Puis il a disparu dans le brouillard. Il y a trente-neuf ans, quelqu'un a sauvé un train. Maintenant, je sais qui. Et je sais où je dois être en mille neuf cent quatre-vingt-sept.",
+      "visuels": [
+        "close-up of an old man's kind smiling face in fog, lit by warm light, he looks like an older version of a young man",
+        "an old wristwatch on a wrist in the fog, close-up, warm light",
+        "a silhouette of an old man walking away into thick fog on a railway platform, cinematic, emotional"
+      ]
+    }
+  ],
+  "visuels_fin": [
+    "a night train crossing a misty valley at dawn, first light of the sun, hopeful, cinematic"
+  ],
+  "appel_action": "C'était la fin du Dernier Train. Une nouvelle histoire arrive demain. Abonne-toi pour ne pas la rater. Et toi, tu serais monté ?",
+  "carton_fin": "Tu serais monté ? • Oui ou non en commentaire",
+  "legende": "Il savait que le train de vendredi allait avoir un accident… et il est monté quand même 😨 Partie 3/3, la fin du « Dernier Train ». Tu serais monté ? (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": [
+    "#storytime",
+    "#mystere",
+    "#frisson",
+    "#train",
+    "#fiction"
+  ],
+  "test": "question d'engagement affichée en grand à la fin (au lieu de « Abonne-toi »)"
+}

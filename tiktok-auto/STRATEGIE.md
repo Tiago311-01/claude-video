@@ -1,6 +1,6 @@
 # STRATÉGIE — mise à jour à chaque cycle
 
-_Dernière mise à jour : 2026-11-19 (cycle 3)_
+_Dernière mise à jour : 2026-11-20 (cycle 6)_
 
 ## Positionnement
 - **Une seule promesse** : « des histoires inventées qui donnent des frissons, en épisodes ».
@@ -82,3 +82,14 @@ générateur (donc libre de droits, zéro risque de retrait pour droits d'auteur
   Test lancé : **histoire courte autonome à 21 h 15** (« La pellicule de 1974 », 69 s, accroche de 13 mots,
   image choc dès la 1ʳᵉ seconde). À comparer aux épisodes de 18 h 45 (vues à 24 h, j'aime/vue).
   Si concluant : 1 série à 18 h 45 + 1 histoire courte à 21 h 15 chaque jour.
+- 20/11 (cycle 6) — Bilan après 3 vidéos :
+  | Vidéo | Créneau | Vues | J'aime | Com. | Partages |
+  |---|---|---|---|---|---|
+  | L'Étage 4 P1 v2 | 23 h 05 | 271 (~26 h) | 8 | 0 | 0 |
+  | L'Étage 4 P2 | 18 h 45 | 232 (~6 h) | 3 | 0 | 0 |
+  | La pellicule (courte) | 21 h 15 | 106 (~3 h) | 1 | 0 | 0 |
+  → **18 h 45 est le meilleur créneau** (meilleur départ). Le format court à 21 h 15 est à juger à 24 h.
+  → **Problème principal : 0 commentaire, 0 partage, 0 abonné gagné** (404, -2). Les vues ne se convertissent pas.
+  Prochain test (un seul changement) : la question d'engagement affichée EN GROS à l'écran pendant la fin
+  (carton_fin = la question, ex. « TU SERAIS MONTÉ ? OUI / NON EN COMMENTAIRE ») au lieu de « Abonne-toi ».
+  Les commentaires sont le signal qui déclenche la distribution.

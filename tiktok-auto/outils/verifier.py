@@ -31,6 +31,8 @@ IGNORED_RULES = {
     "WHITESPACE_RULE", "FRENCH_WHITESPACE", "UPPERCASE_SENTENCE_START", "DOUBLE_PUNCTUATION",
     "APOS_TYP", "FR_SPLIT_WORDS_HYPHEN", "TIRET", "POINTS_SUSPENSION", "ESPACE_INSECABLE",
     "EMOJI", "DASH_RULE", "COMMA_PARENTHESIS_WHITESPACE",
+    # faux positif récurrent sur « Puis il… », « Alors je… » (3 fois sur nos textes, jamais une vraie faute)
+    "VIRGULE_DEBUT_DE_PHRASE",
 }
 
 
