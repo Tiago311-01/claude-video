@@ -1,0 +1,56 @@
+{
+  "id": "2026-11-26_calendrier_p3",
+  "serie": "Le Calendrier",
+  "episode": 3,
+  "episodes_prevus": 3,
+  "creneau": "18:45",
+  "titre": "Le Calendrier — Partie 3 (fin)",
+  "titre_ecran": "Ce que cachait la dernière case",
+  "narrateur": {"nom": "Chloé", "genre": "femme"},
+  "ambiance": "destin",
+  "palette": "or",
+  "couleur": [255, 210, 0],
+  "test": "carton de fin interactif",
+  "accroche": "Ma grand-mère m'a enfin expliqué le calendrier. Il ne prédit rien. Il protège.",
+  "visuels_accroche": [
+    "close-up of an elderly woman's wrinkled hands holding a young woman's hands, warm golden lamp light, emotional",
+    "a vintage wooden cabinet with many small drawers like an advent calendar glowing softly in candlelight, no text"
+  ],
+  "scenes": [
+    {
+      "texte": "Si tu as raté le début : le calendrier de ma grand-mère prédit le lendemain. Une case m'a sauvée d'un accident. Et hier, la case du jour était vide. Juste une goutte de cire rouge.",
+      "visuels": [
+        "an empty snowy bike lane at a city crossroads with a red traffic light, morning, cinematic",
+        "an empty small wooden drawer with a single drop of red candle wax inside, extreme close-up, candlelight"
+      ]
+    },
+    {
+      "texte": "Je suis retournée la voir. Cette fois, elle m'attendait, assise bien droite. Elle m'a dit : ce calendrier passe de mère en fille depuis cent ans. Chaque case, c'est un danger qu'on t'enlève.",
+      "visuels": [
+        "an elderly woman sitting upright in an armchair by a window in the evening, calm and lucid, warm light",
+        "a young woman sitting close to her grandmother, listening intently, soft lamp light, emotional",
+        "an old sepia photograph of several generations of women standing in front of a country house, vintage, no text"
+      ]
+    },
+    {
+      "texte": "La case vide, c'était elle. Elle avait gardé ce jour-là pour elle. Le soir même, elle s'est endormie paisiblement, en souriant.",
+      "visuels": [
+        "an elderly woman peacefully asleep with a gentle smile in a cozy bed, soft warm light, serene",
+        "a window with snow falling softly at night, a single candle on the sill, peaceful and melancholic"
+      ]
+    },
+    {
+      "texte": "Le soir de Noël, j'ai enfin ouvert la dernière case. À l'intérieur, une plume, et un petit mot de sa main : maintenant, c'est toi qui écris les cases.",
+      "visuels": [
+        "a young woman opening a small wooden drawer on Christmas night, a decorated tree with warm lights behind her",
+        "close-up of an old fountain pen and a small folded note inside a wooden drawer, warm candlelight, no readable text",
+        "a young woman smiling with tears in her eyes, holding a fountain pen, Christmas lights bokeh, emotional"
+      ]
+    }
+  ],
+  "visuels_fin": ["an antique wooden cabinet with small drawers under a Christmas tree with warm lights, snow outside the window"],
+  "appel_action": "C'était la fin du Calendrier. Une nouvelle histoire arrive demain. Et toi, tu accepterais de garder ce calendrier ? Réponds oui ou non en commentaire.",
+  "carton_fin": "Tu le garderais ? • Oui ou non en commentaire",
+  "legende": "Ce que cachait la dernière case du calendrier de sa grand-mère… 🥹 Partie 3/3, la fin du « Calendrier ». Tu le garderais ? Oui ou non 👇 (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": ["#storytime", "#mystere", "#noel", "#emotion", "#fiction"]
+}

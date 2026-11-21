@@ -238,3 +238,13 @@ Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part s
 3. **« Le Calendrier » P2** : 62 s, voix de femme, 14 plans 3D, 0 faute, 0 image de secours, planche OK.
    **Programmée le 25/11 à 18 h 45.**
 4. Prochain cycle : Calendrier P3 (26/11) ; mesurer l'effet du 3D sur les vidéos de ce soir.
+
+### 2026-11-21 ~20 h (Paris) — Cycle 13 (automatique)
+1. Statut : **Dernier Train P1 publiée à 18 h 45** (1ʳᵉ vidéo en mouvement 3D) :
+   https://www.tiktok.com/@rt_production_/video/7710682303428627734 — 16 vues à 40 min.
+   « Le livre d'or » ce soir 21 h 15.
+2. Stats : 401 abonnés, 9 951 j'aime. Anciennes vidéos stables (262-286 vues).
+3. **« Le Calendrier » P3 (fin)** : 66 s, voix de femme, fin émouvante, 0 faute, 0 image de secours malgré un
+   service d'images saturé (HTTP 503 répétés, retentés avec succès). **Programmée le 26/11 à 18 h 45.**
+4. Promesse : la fin du Calendrier annonce « une nouvelle histoire demain » → **nouvelle série P1 le 27/11**.
+5. Prochain cycle : histoire courte 23/11 21 h 15 ; mesurer Dernier Train P1 (3D) à ~6 h.
