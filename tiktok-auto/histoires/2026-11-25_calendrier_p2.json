@@ -1,0 +1,56 @@
+{
+  "id": "2026-11-25_calendrier_p2",
+  "serie": "Le Calendrier",
+  "episode": 2,
+  "episodes_prevus": 3,
+  "creneau": "18:45",
+  "titre": "Le Calendrier — Partie 2",
+  "titre_ecran": "Elle ne reconnaît plus personne. Sauf moi.",
+  "narrateur": {"nom": "Chloé", "genre": "femme"},
+  "ambiance": "mystere",
+  "palette": "or",
+  "couleur": [255, 210, 0],
+  "test": "carton de fin interactif",
+  "accroche": "La case du jour disait : ne prends pas ton vélo jeudi. J'ai bien fait d'obéir.",
+  "visuels_accroche": [
+    "a tiny folded old paper note inside a small open wooden drawer of an antique cabinet, candlelight, close-up, no readable text",
+    "a bicycle locked alone on a snowy french street at dawn, cold blue light, cinematic"
+  ],
+  "scenes": [
+    {
+      "texte": "Si tu as raté le début : chez ma grand-mère, j'ai trouvé un calendrier de l'Avent qui prédit le lendemain. Et la dernière case porte mon prénom.",
+      "visuels": [
+        "a vintage wooden cabinet with many small closed drawers like an advent calendar, in a dark attic, candlelight, no text",
+        "close-up of a small wooden drawer sealed with dripping red candle wax, candlelight, no text"
+      ]
+    },
+    {
+      "texte": "Troisième case : ne prends pas ton vélo jeudi. Jeudi, j'ai pris le bus. Au carrefour où je passe tous les matins, un camion a grillé le feu rouge. En plein sur la piste cyclable.",
+      "visuels": [
+        "a young woman sitting by the window of a city bus in the morning, looking outside, soft cold light",
+        "a busy french city crossroads on a snowy morning, a large truck passing a red traffic light, motion blur, no text",
+        "an empty snowy bike lane at a crossroads with a red traffic light, morning, tense atmosphere"
+      ]
+    },
+    {
+      "texte": "Le soir même, je suis allée voir ma grand-mère. Depuis des mois, elle ne reconnaît plus personne. Mais quand je suis entrée, elle m'a regardée droit dans les yeux. Et elle a dit : tu as trouvé mon calendrier.",
+      "visuels": [
+        "a cozy room in a retirement home in the evening, an elderly woman sitting in an armchair by a lamp, peaceful",
+        "a young woman entering a dim room carrying flowers, hesitant, warm lamp light",
+        "close-up of an elderly woman's piercing lucid eyes looking straight at the camera, warm light, mysterious"
+      ]
+    },
+    {
+      "texte": "En rentrant, j'ai ouvert la case du lendemain. Il n'y avait pas de papier. Juste une goutte de cire rouge. Encore tiède.",
+      "visuels": [
+        "a young woman opening a tiny wooden drawer at night by candlelight, tense face, close-up",
+        "an empty small wooden drawer with a single drop of red candle wax inside, extreme close-up, candlelight"
+      ]
+    }
+  ],
+  "visuels_fin": ["an antique wooden cabinet with small drawers next to a window with snow falling at night, one candle burning"],
+  "appel_action": "La fin demain, dans la partie trois. Et toi, tu ouvrirais la case suivante ? Réponds oui ou non en commentaire.",
+  "carton_fin": "Tu l'ouvrirais ? • Oui ou non en commentaire",
+  "legende": "Sa grand-mère ne reconnaît plus personne… sauf elle. Et la case du lendemain est vide. 😨 Partie 2/3 du « Calendrier ». Tu l'ouvrirais ? Oui ou non 👇 (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": ["#storytime", "#mystere", "#noel", "#frisson", "#fiction"]
+}

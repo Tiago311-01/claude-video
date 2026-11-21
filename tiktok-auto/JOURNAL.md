@@ -230,3 +230,11 @@ Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part s
    1 faux positif justifié. **Programmée le 22/11 à 21 h 15.**
 4. Prochain cycle : Calendrier P2 (25/11). À surveiller : effet du mouvement 3D sur les vues (premières
    vidéos 3D publiées ce soir).
+
+### 2026-11-21 ~14 h (Paris) — Cycle 12 (automatique)
+1. Statut : inchangé (ce soir : Dernier Train P1 + « Le livre d'or », 1ʳᵉˢ vidéos en mouvement 3D).
+2. Stats : 401 abonnés, 9 946 j'aime. **1ᵉʳ commentaire du compte** sur « Vous êtes arrivée » (carton interactif) ;
+   vues : 286 / 272 / 263 / 262 / 256. Le carton interactif est conservé.
+3. **« Le Calendrier » P2** : 62 s, voix de femme, 14 plans 3D, 0 faute, 0 image de secours, planche OK.
+   **Programmée le 25/11 à 18 h 45.**
+4. Prochain cycle : Calendrier P3 (26/11) ; mesurer l'effet du 3D sur les vidéos de ce soir.
