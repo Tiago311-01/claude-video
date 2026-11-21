@@ -1,0 +1,72 @@
+{
+  "id": "2026-11-24_calendrier_p1",
+  "serie": "Le Calendrier",
+  "episode": 1,
+  "episodes_prevus": 3,
+  "creneau": "18:45",
+  "titre": "Le Calendrier — Partie 1",
+  "titre_ecran": "Le calendrier qui prédit demain",
+  "narrateur": {
+    "nom": "Chloé",
+    "genre": "femme"
+  },
+  "ambiance": "mystere",
+  "palette": "or",
+  "couleur": [
+    255,
+    210,
+    0
+  ],
+  "test": "épisode court (~70 s) + carton de fin interactif",
+  "accroche": "J'ai trouvé un calendrier de l'Avent qui prédit le lendemain. Case par case.",
+  "visuels_accroche": [
+    "a vintage wooden cabinet with many small closed drawers and tiny doors, like an advent calendar, standing on an old table in a dark attic, candlelight, close-up, no text",
+    "close-up of a young woman's hand opening a tiny wooden door of an antique advent calendar, warm light"
+  ],
+  "scenes": [
+    {
+      "texte": "Ma grand-mère est partie en maison de retraite, alors je vide sa maison. Dans le grenier, sous une vieille couverture, j'ai trouvé un calendrier en bois. Vingt-quatre petites portes, toutes fermées.",
+      "visuels": [
+        "a young woman with a flashlight exploring a dusty wooden attic full of old boxes and furniture, warm light beams",
+        "a young woman lifting an old wool blanket to reveal a handmade wooden advent calendar, dust in the light"
+      ]
+    },
+    {
+      "texte": "Derrière la première porte, un papier plié : demain, il neigera sur la ville. On était en novembre, il faisait doux. Le lendemain matin, tout était blanc.",
+      "visuels": [
+        "a tiny folded old paper note inside a small open wooden compartment, close-up, candlelight, no readable text",
+        "a french city street at dawn covered in fresh snow, quiet, soft blue light, cinematic"
+      ]
+    },
+    {
+      "texte": "Deuxième porte : la voisine sonnera à midi. Elle ne m'avait jamais adressé la parole. À midi pile, la sonnette a retenti.",
+      "visuels": [
+        "a wall clock showing noon in a cozy old french apartment, warm light",
+        "an elderly neighbor woman standing at an apartment door ringing the bell, seen through a peephole, slightly eerie"
+      ]
+    },
+    {
+      "texte": "Alors j'ai voulu tricher. J'ai essayé d'ouvrir la dernière porte. Elle était scellée à la cire rouge. Et gravé dessus, en toutes petites lettres : ne l'ouvre surtout pas avant Noël, Chloé.",
+      "visuels": [
+        "close-up of a small wooden drawer sealed with dripping red candle wax, antique wooden cabinet, candlelight, no text",
+        "a young woman's frightened face lit by a candle in a dark attic at night, cinematic"
+      ]
+    }
+  ],
+  "visuels_fin": [
+    "an antique wooden advent calendar on a table next to a window with snow falling outside at night, warm candlelight"
+  ],
+  "appel_action": "La suite demain, dans la partie deux. Et toi, tu l'aurais ouverte ? Réponds oui ou non en commentaire.",
+  "carton_fin": "Tu l'aurais ouverte ? • Oui ou non en commentaire",
+  "legende": "Un calendrier de l'Avent qui prédit le lendemain… et la dernière case porte son prénom 😨 Partie 1/3. Tu l'aurais ouverte ? Oui ou non 👇 (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": [
+    "#storytime",
+    "#mystere",
+    "#noel",
+    "#frisson",
+    "#fiction"
+  ],
+  "verif_faux_positifs": {
+    "VIRG_NON_TROUVEE": "« Alors j'ai voulu tricher » ne demande pas de virgule"
+  }
+}

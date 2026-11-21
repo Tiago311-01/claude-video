@@ -209,3 +209,15 @@ Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part s
 - Stats : 402 abonnés. P2 286 vues, P1 v2 272, La pellicule 257. Toujours 0 commentaire.
 - Prochain cycle : nouvelle série (épisodes ~70 s, mouvement 3D) pour le 24/11 ; mise à niveau 3D de
   Dernier Train P2/P3 si le temps le permet.
+
+### 2026-11-21 ~02 h 30 (Paris) — Cycle 10 (automatique)
+1. Statut : « Vous êtes arrivée » publiée hier 21 h 15 (https://www.tiktok.com/@rt_production_/video/7710349886134308099).
+2. Stats : 401 abonnés, 9 930 j'aime. P2 286 vues, P1 v2 272, La pellicule 261, P3 180 (~6 h),
+   « Vous êtes arrivée » 93 (~3 h, 2 j'aime). **0 commentaire malgré le carton interactif** (1ʳᵉ mesure) :
+   test maintenu sur 2 vidéos de plus avant décision.
+3. Dernier Train P2 et P3 refaits avec le mouvement 3D et reprogrammés aux mêmes créneaux (22 et 23/11).
+4. **Nouvelle série « Le Calendrier »** (tendance Noël précoce ; bible histoires/series/calendrier.md) :
+   P1 62 s (épisode court), voix de femme (Chloé), 14 plans en 3D, 0 faute (1 faux positif justifié).
+   Planche : calendrier invisible dans l'accroche → images reformulées ; mots longs surlignés collés
+   (« CALENDRIERDE ») → agrandissement limité selon la longueur du mot. **Programmée le 24/11 à 18 h 45.**
+5. Prochain cycle : histoire courte pour le 22/11 à 21 h 15 (créneau libre), puis Calendrier P2 (25/11).

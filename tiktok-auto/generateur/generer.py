@@ -575,7 +575,9 @@ def render_overlay(img: Image.Image, t: float, ctx: dict):
             x = (W - tot) / 2
             yb = 1130 + (1 - appear) * 25
             for (txt, active, pop), wd in zip(pieces, widths):
-                fz = int(fsz * scale * (1 + 0.10 * pop))
+                # agrandissement limité pour que le mot ne mange jamais plus de 35 % de l'espace voisin
+                grow = min(0.10, 0.7 * sp / max(wd, 1))
+                fz = int(fsz * scale * (1 + grow * pop))
                 fa = font("black", fz)
                 col = accent if active else (255, 255, 255)
                 # le mot grossit autour de son propre centre : il ne déborde jamais sur l'espace voisin
