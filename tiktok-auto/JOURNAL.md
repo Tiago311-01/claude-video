@@ -221,3 +221,12 @@ Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part s
    Planche : calendrier invisible dans l'accroche → images reformulées ; mots longs surlignés collés
    (« CALENDRIERDE ») → agrandissement limité selon la longueur du mot. **Programmée le 24/11 à 18 h 45.**
 5. Prochain cycle : histoire courte pour le 22/11 à 21 h 15 (créneau libre), puis Calendrier P2 (25/11).
+
+### 2026-11-21 ~08 h (Paris) — Cycle 11 (automatique)
+1. Statut : inchangé (Dernier Train P1 + « Le livre d'or » ce soir ; P2, P3 les 22-23/11 ; Calendrier P1 le 24/11).
+2. Stats : 401 abonnés, 9 933 j'aime. Plafond confirmé : P2 286, P1 v2 272, La pellicule 261, P3 252,
+   « Vous êtes arrivée » 198 (2 j'aime). 0 commentaire / 0 partage sur toutes les vidéos.
+3. **« Chambre 7 »** (courte, narrateur Karim → voix d'homme) : 60,6 s, 15 plans en 3D, 0 image de secours,
+   1 faux positif justifié. **Programmée le 22/11 à 21 h 15.**
+4. Prochain cycle : Calendrier P2 (25/11). À surveiller : effet du mouvement 3D sur les vues (premières
+   vidéos 3D publiées ce soir).

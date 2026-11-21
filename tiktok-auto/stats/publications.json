@@ -108,5 +108,14 @@
     "postSubmissionId": "9a2adc62-9aa9-4c0a-9411-b330ab718347",
     "statut": "scheduled",
     "cree_le": "2026-11-21T01:10:59+00:00"
+  },
+  {
+    "id": "2026-11-22_chambre7",
+    "serie": null,
+    "episode": null,
+    "programme_le": "2026-11-22T21:15:00+01:00",
+    "postSubmissionId": "66eed2ef-18b6-48ab-b3a6-886faf930297",
+    "statut": "scheduled",
+    "cree_le": "2026-11-21T06:51:17+00:00"
   }
 ]

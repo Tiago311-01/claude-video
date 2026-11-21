@@ -1,0 +1,72 @@
+{
+  "id": "2026-11-22_chambre7",
+  "format": "histoire courte autonome",
+  "creneau": "21:15",
+  "titre": "Chambre 7",
+  "titre_ecran": "La chambre 7 appelle à 3 h 07",
+  "narrateur": {
+    "nom": "Karim",
+    "genre": "homme"
+  },
+  "ambiance": "paranormal",
+  "palette": "brume",
+  "couleur": [
+    255,
+    210,
+    0
+  ],
+  "test": "carton de fin interactif (3ᵉ mesure)",
+  "accroche": "Chaque nuit à trois heures sept, la chambre sept appelle la réception. Elle est condamnée depuis vingt ans.",
+  "visuels_accroche": [
+    "an old hotel reception desk at night with a vintage telephone switchboard, one small red light glowing, dim warm lamp, eerie, no text",
+    "a dark hotel corridor at night with a single door at the end, faint light under the door, mysterious, cinematic"
+  ],
+  "scenes": [
+    {
+      "texte": "Je suis réceptionniste de nuit dans un petit hôtel de montagne. Les nuits sont calmes. Sauf à trois heures sept. Chaque fois, le voyant de la chambre sept s'allume, et le téléphone sonne.",
+      "visuels": [
+        "a small old mountain hotel at night in the snow, warm windows, cinematic",
+        "a young male night receptionist sitting alone behind a wooden hotel desk at night, tired face, warm lamp light",
+        "close-up of an old beige hotel telephone ringing on a wooden desk at night, red light glowing"
+      ]
+    },
+    {
+      "texte": "Je décroche. Personne. Juste un souffle. Le patron m'a dit de ne jamais monter. La chambre sept est condamnée depuis vingt ans. Ses fenêtres sont murées.",
+      "visuels": [
+        "close-up of a young man holding an old telephone receiver to his ear, worried face, dim light",
+        "the outside wall of an old hotel at night with one bricked-up window among lit windows, fog, eerie"
+      ]
+    },
+    {
+      "texte": "Cette nuit, j'ai pris la clé. La porte de la chambre était déjà ouverte. Le lit était fait, la lampe allumée. Et sur la table de nuit, le téléphone était décroché.",
+      "visuels": [
+        "a young man holding an old brass hotel key walking up a dark wooden staircase at night, flashlight",
+        "an old hotel room with a perfectly made bed and a lit bedside lamp, door half open, uncanny stillness",
+        "close-up of an old telephone receiver lying off the hook on a bedside table, lamp light, eerie"
+      ]
+    },
+    {
+      "texte": "J'ai approché le combiné de mon oreille. Et j'ai entendu ma propre voix, à la réception, qui disait calmement : chambre sept, que puis-je faire pour vous ?",
+      "visuels": [
+        "a young man slowly raising a telephone receiver to his ear in a dim hotel room, frightened eyes, cinematic close-up",
+        "an empty hotel reception desk at night seen from far away, a shadowy figure sitting behind it, eerie"
+      ]
+    }
+  ],
+  "visuels_fin": [
+    "a dark hotel corridor at night, a door with a brass number plate slightly open, warm light inside, no readable text"
+  ],
+  "appel_action": "Fin de l'histoire. Et toi, tu aurais décroché ? Réponds oui ou non en commentaire.",
+  "carton_fin": "Tu aurais décroché ? • Oui ou non en commentaire",
+  "legende": "La chambre 7 est condamnée depuis 20 ans… mais elle appelle la réception chaque nuit à 3 h 07. 😨 Tu aurais décroché ? Oui ou non 👇 (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": [
+    "#storytime",
+    "#mystere",
+    "#frisson",
+    "#creepytiktok",
+    "#fiction"
+  ],
+  "verif_faux_positifs": {
+    "PAS_DE_VERBE_APRES_POSSESSIF_DEMONSTRATIF": "« la chambre sept appelle la réception » : « appelle » est bien le verbe (« sept » est le numéro de la chambre)"
+  }
+}
