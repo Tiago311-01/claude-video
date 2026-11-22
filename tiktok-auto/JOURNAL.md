@@ -1,5 +1,11 @@
 # JOURNAL
 
+## ⛔ PROJET ARRÊTÉ le 22/11/2026 (demande de l'utilisateur)
+- Tâche planifiée cloud (cycle toutes les 6 h) **désactivée** (non supprimée : réactivable).
+- Les 9 publications encore programmées dans Blotato ont été **annulées** (plus rien ne sera publié).
+- Reste à faire par l'utilisateur : résilier l'abonnement Blotato, et éventuellement supprimer la clé API
+  (Blotato + « Network secrets » de l'environnement cloud) et l'autorisation TikTok donnée à Blotato.
+
 ## ✅ ACTIONS REQUISES : aucune pour l'instant
 
 Connexions faites le 2026-11-18 (Blotato relié au compte TikTok @rt_production_, clé API enregistrée
@@ -286,3 +292,8 @@ Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part s
    **Programmé le 23/11 à 12 h 30.**
 5. **« Le Phare » P2** : 60,1 s, voix d'homme, 14 plans 3D, 0 faute. **Programmée le 28/11 à 18 h 45.**
 6. Prochain cycle : histoire courte 24/11 21 h 15, POV du 24/11, Phare P3 (29/11).
+
+### 2026-11-22 ~20 h 30 (Paris) — Arrêt du projet
+Demande de l'utilisateur. Tâche planifiée désactivée ; 9 programmations Blotato annulées (Chambre 7 du 22/11,
+POV judas, Dernier Train P3, L'enceinte, Calendrier P1-P3, Phare P1-P2). Bilan final : 399 abonnés (406 au départ),
+9 vidéos publiées, ~250-290 vues chacune, 1 commentaire. Le meilleur démarrage a été le format POV (246 vues en 6 h).

@@ -78,9 +78,9 @@
     "episode": 3,
     "programme_le": "2026-11-23T18:45:00+01:00",
     "postSubmissionId": "350b85d5-4c64-450a-ac64-6f9ccd832b0b",
-    "statut": "scheduled",
+    "statut": "annulee",
     "cree_le": "2026-11-20T00:59:36+00:00",
-    "note": "remplacée par une nouvelle version (mouvement 3D)"
+    "note": "remplacée par une nouvelle version (mouvement 3D) ; annulée le 22/11 : arrêt du projet demandé par l'utilisateur"
   },
   {
     "id": "2026-11-20_gps",
@@ -109,8 +109,9 @@
     "episode": 1,
     "programme_le": "2026-11-24T18:45:00+01:00",
     "postSubmissionId": "9a2adc62-9aa9-4c0a-9411-b330ab718347",
-    "statut": "scheduled",
-    "cree_le": "2026-11-21T01:10:59+00:00"
+    "statut": "annulee",
+    "cree_le": "2026-11-21T01:10:59+00:00",
+    "note": "annulée le 22/11 : arrêt du projet demandé par l'utilisateur"
   },
   {
     "id": "2026-11-22_chambre7",
@@ -118,8 +119,9 @@
     "episode": null,
     "programme_le": "2026-11-22T21:15:00+01:00",
     "postSubmissionId": "66eed2ef-18b6-48ab-b3a6-886faf930297",
-    "statut": "scheduled",
-    "cree_le": "2026-11-21T06:51:17+00:00"
+    "statut": "annulee",
+    "cree_le": "2026-11-21T06:51:17+00:00",
+    "note": "annulée le 22/11 : arrêt du projet demandé par l'utilisateur"
   },
   {
     "id": "2026-11-25_calendrier_p2",
@@ -127,8 +129,9 @@
     "episode": 2,
     "programme_le": "2026-11-25T18:45:00+01:00",
     "postSubmissionId": "d7e67828-e497-47a0-907a-f770fd231f5d",
-    "statut": "scheduled",
-    "cree_le": "2026-11-21T12:52:35+00:00"
+    "statut": "annulee",
+    "cree_le": "2026-11-21T12:52:35+00:00",
+    "note": "annulée le 22/11 : arrêt du projet demandé par l'utilisateur"
   },
   {
     "id": "2026-11-26_calendrier_p3",
@@ -136,8 +139,9 @@
     "episode": 3,
     "programme_le": "2026-11-26T18:45:00+01:00",
     "postSubmissionId": "c8c22db2-a7da-4c9d-a419-46386d87796f",
-    "statut": "scheduled",
-    "cree_le": "2026-11-21T18:54:36+00:00"
+    "statut": "annulee",
+    "cree_le": "2026-11-21T18:54:36+00:00",
+    "note": "annulée le 22/11 : arrêt du projet demandé par l'utilisateur"
   },
   {
     "id": "2026-11-23_pov_telephone",
@@ -155,8 +159,9 @@
     "episode": null,
     "programme_le": "2026-11-23T21:15:00+01:00",
     "postSubmissionId": "c9fbd787-f9bb-4450-a4e3-8f2e834d3183",
-    "statut": "scheduled",
-    "cree_le": "2026-11-22T06:49:45+00:00"
+    "statut": "annulee",
+    "cree_le": "2026-11-22T06:49:45+00:00",
+    "note": "annulée le 22/11 : arrêt du projet demandé par l'utilisateur"
   },
   {
     "id": "2026-11-27_phare_p1",
@@ -164,8 +169,9 @@
     "episode": 1,
     "programme_le": "2026-11-27T18:45:00+01:00",
     "postSubmissionId": "c39c7cc4-e576-40a7-a746-f8a3b8efb008",
-    "statut": "scheduled",
-    "cree_le": "2026-11-22T12:52:52+00:00"
+    "statut": "annulee",
+    "cree_le": "2026-11-22T12:52:52+00:00",
+    "note": "annulée le 22/11 : arrêt du projet demandé par l'utilisateur"
   },
   {
     "id": "2026-11-23_pov_judas",
@@ -173,8 +179,9 @@
     "episode": null,
     "programme_le": "2026-11-23T12:30:00+01:00",
     "postSubmissionId": "76979c91-97aa-4777-9fe3-7c1af3c81c7d",
-    "statut": "scheduled",
-    "cree_le": "2026-11-22T18:36:00+00:00"
+    "statut": "annulee",
+    "cree_le": "2026-11-22T18:36:00+00:00",
+    "note": "annulée le 22/11 : arrêt du projet demandé par l'utilisateur"
   },
   {
     "id": "2026-11-28_phare_p2",
@@ -182,7 +189,8 @@
     "episode": 2,
     "programme_le": "2026-11-28T18:45:00+01:00",
     "postSubmissionId": "2c7f380a-0461-47a7-9258-02b59e899ab4",
-    "statut": "scheduled",
-    "cree_le": "2026-11-22T18:58:28+00:00"
+    "statut": "annulee",
+    "cree_le": "2026-11-22T18:58:28+00:00",
+    "note": "annulée le 22/11 : arrêt du projet demandé par l'utilisateur"
   }
 ]
