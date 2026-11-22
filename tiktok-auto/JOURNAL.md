@@ -258,5 +258,5 @@ Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part s
    `verifier.py` accepte le format POV (6-20 s).
 4. **POV « tel sous le lit »** : 10 s, image générée (main pâle tendant un téléphone), texte en haut pour ne pas
    cacher la main, sursaut final, -15,4 LUFS. Faux positifs de style justifiés (« Pov », « t'as »).
-   **Programmé le 23/11 à 12 h 30.**
+   **Programmé le 22/11 à 12 h 30** (1ᵉʳ créneau libre ; dimanche = 3 vidéos, limite respectée).
 5. Prochain cycle : histoire courte 23/11 21 h 15 ; préparer la série du 27/11.
