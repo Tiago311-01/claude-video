@@ -248,3 +248,15 @@ Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part s
    service d'images saturé (HTTP 503 répétés, retentés avec succès). **Programmée le 26/11 à 18 h 45.**
 4. Promesse : la fin du Calendrier annonce « une nouvelle histoire demain » → **nouvelle série P1 le 27/11**.
 5. Prochain cycle : histoire courte 23/11 21 h 15 ; mesurer Dernier Train P1 (3D) à ~6 h.
+
+### 2026-11-22 ~02 h 30 (Paris) — Cycle 14 (automatique)
+1. Statut : « Le livre d'or » publiée hier 21 h 15 (https://www.tiktok.com/@rt_production_/video/7710720970373238038).
+2. Stats : **399 abonnés** (-2), 9 954 j'aime. Dernier Train P1 (3D) 170 vues à ~7 h ; « Le livre d'or » (3D) 68 à 3 h.
+   Mouvement 3D sans effet mesurable (voir STRATEGIE.md).
+3. Décision : tester le format POV (celui de la vidéo de l'utilisateur, meilleur taux de j'aime) à 12 h 30.
+   `pov.py` utilise maintenant le mouvement 3D ; position du texte réglable (`texte_y`) ;
+   `verifier.py` accepte le format POV (6-20 s).
+4. **POV « tel sous le lit »** : 10 s, image générée (main pâle tendant un téléphone), texte en haut pour ne pas
+   cacher la main, sursaut final, -15,4 LUFS. Faux positifs de style justifiés (« Pov », « t'as »).
+   **Programmé le 23/11 à 12 h 30.**
+5. Prochain cycle : histoire courte 23/11 21 h 15 ; préparer la série du 27/11.

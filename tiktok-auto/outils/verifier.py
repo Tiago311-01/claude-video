@@ -132,8 +132,10 @@ def main():
         errors.append(f"codec vidéo {v['codec_name']} (attendu h264)")
     if not a:
         errors.append("aucune piste audio")
-    if not 60 <= dur <= 120:
-        errors.append(f"durée {dur:.1f}s hors de [60, 120]")
+    pov = story.get("format") == "pov"
+    lo, hi = (6, 20) if pov else (60, 120)
+    if not lo <= dur <= hi:
+        errors.append(f"durée {dur:.1f}s hors de [{lo}, {hi}]")
     if size_mb > 250:
         errors.append(f"fichier trop lourd ({size_mb:.0f} Mo)")
 
@@ -149,7 +151,10 @@ def main():
     if any(b > 1.5 for b in blk):
         errors.append(f"écran noir prolongé : {blk}")
 
-    texts = [story["accroche"], *[s["texte"] for s in story["scenes"]], story["appel_action"], story["legende"]]
+    if pov:
+        texts = [story["texte_pov"], story.get("texte_revelation", ""), story["legende"]]
+    else:
+        texts = [story["accroche"], *[s["texte"] for s in story["scenes"]], story["appel_action"], story["legende"]]
     # faux positifs justifiés par l'agent dans le JSON : {"REGLE": "justification"}
     sp = spellcheck(texts, story.get("verif_faux_positifs"))
     for it in sp:

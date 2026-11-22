@@ -97,9 +97,10 @@
     "episode": null,
     "programme_le": "2026-11-21T21:15:00+01:00",
     "postSubmissionId": "9d43911c-82ec-40fa-9acf-f960e1b94471",
-    "statut": "scheduled",
+    "statut": "published",
     "cree_le": "2026-11-20T13:01:45+00:00",
-    "note": "remplacée par une nouvelle version (mouvement 3D)"
+    "note": "remplacée par une nouvelle version (mouvement 3D)",
+    "url": "https://www.tiktok.com/@rt_production_/video/7710720970373238038"
   },
   {
     "id": "2026-11-24_calendrier_p1",
@@ -136,5 +137,14 @@
     "postSubmissionId": "c8c22db2-a7da-4c9d-a419-46386d87796f",
     "statut": "scheduled",
     "cree_le": "2026-11-21T18:54:36+00:00"
+  },
+  {
+    "id": "2026-11-23_pov_telephone",
+    "serie": null,
+    "episode": null,
+    "programme_le": "2026-11-22T12:30:00+01:00",
+    "postSubmissionId": "dce3a8c9-6fda-468b-94a4-9b390d6d8293",
+    "statut": "scheduled",
+    "cree_le": "2026-11-22T00:37:33+00:00"
   }
 ]

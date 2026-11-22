@@ -99,3 +99,8 @@ générateur (donc libre de droits, zéro risque de retrait pour droits d'auteur
   Décisions : (1) histoires courtes à 21 h 15 chaque jour en plus de la série de 18 h 45 ;
   (2) carton de fin « question + oui ou non en commentaire » testé dès « Vous êtes arrivée » (20/11 21 h 15) ;
   (3) prochaine série : épisodes plus courts (≈ 65-75 s, 170-190 mots) pour améliorer le taux de visionnage complet.
+- 22/11 (cycle 14) — **Mouvement 3D : pas d'effet mesurable** (Dernier Train P1 170 vues à ~7 h ; « Le livre d'or »
+  68 à 3 h, contre 93-106 pour les courtes précédentes). Conservé (coût nul) mais ce n'est pas le levier.
+  Abonnés en lente baisse (406 → 399 en 4 jours). Le seul signal fort du compte est la vidéo POV de l'utilisateur
+  (≈ 11 % de j'aime/vue). → **Test du format POV** (10 s, texte « Pov : … », révélation + sursaut, mouvement 3D)
+  au créneau inutilisé de **12 h 30**, en plus des 2 créneaux existants (max 3/jour respecté).

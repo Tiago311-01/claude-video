@@ -1,0 +1,25 @@
+{
+  "id": "2026-11-23_pov_telephone",
+  "format": "pov",
+  "creneau": "12:30",
+  "duree": 10,
+  "graine": 5,
+  "visage_x": 0.3,
+  "visage_y": 0.72,
+  "texte_pov": "Pov : t'as fait tomber ton tel sous le lit à 3h du mat'",
+  "texte_revelation": "…et quelqu'un te le rend.",
+  "visuel": "horror film still, view from the floor of a dark bedroom at night, a pale thin grey hand reaching out from the darkness under a bed, holding a glowing smartphone toward the camera, realistic, sharp focus",
+  "legende": "Pov : 3h du mat', ton tel est tombé sous le lit… 😨 Tu l'aurais repris ? Oui ou non 👇 (Fiction, vidéo générée par IA)",
+  "hashtags": [
+    "#pov",
+    "#horreur",
+    "#creepytiktok",
+    "#frisson",
+    "#fiction"
+  ],
+  "verif_faux_positifs": {
+    "FR_SPELLING_RULE": "« Pov » = abréviation consacrée du format TikTok (textes très courts relus manuellement, aucune autre faute)",
+    "BARBARISME_TU": "« t'as » = registre familier voulu pour le format POV"
+  },
+  "texte_y": 330
+}

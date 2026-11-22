@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "video": "videos/2026-11-23_pov_telephone.mp4",
+  "duree_s": 10.0,
+  "taille_mo": 19.2,
+  "volume": {
+    "I": -15.4,
+    "LRA": 2.3,
+    "peak": -3.3
+  },
+  "erreurs": [],
+  "avertissements": [],
+  "planche_contact": "videos/2026-11-23_pov_telephone.planche.jpg",
+  "a_faire_par_agent": "Ouvrir la planche contact et confirmer : sous-titres lisibles, visuels cohérents, aucun texte parasite."
+}

@@ -82,6 +82,13 @@ def main():
         raise SystemExit("image indisponible (service saturé) : relancer plus tard")
     src = im  # 1350x2400 (SRC_SCALE)
     sw, sh = src.size
+    # mouvement 3D (profondeur + parallaxe) comme pour les histoires ; repli : zoom simple
+    tmp0 = Path(tempfile.mkdtemp(prefix="pov_src_", dir=g.CACHE))
+    src_path = tmp0 / "src.png"
+    src.save(src_path)
+    dpath = g.compute_depths([str(src_path)])[0]
+    src_arr = np.asarray(src)
+    depth = np.load(dpath).astype(np.float32) if dpath else None
 
     # masque « lumière du téléphone » : ovale doux autour du visage (haut-centre de l'image)
     yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
@@ -112,10 +119,17 @@ def main():
             k = 1 - (t - t_hit) / 0.5
             jx += rng.uniform(-40, 40) * k
             jy += rng.uniform(-40, 40) * k
-        ww, wh = sw / z, sh / z
-        x0 = (sw - ww) / 2 + jx
-        y0 = (sh - wh) / 2 + jy
-        frame = src.transform((W, H), Image.AFFINE, (ww / W, 0, x0, 0, ww / W, y0), resample=Image.BICUBIC)
+        if depth is not None:
+            import cv2
+
+            frame = g.parallax(src_arr, depth, min(1.0, t / dur), 0)
+            M = np.float32([[z, 0, -(z - 1) * W / 2 + jx], [0, z, -(z - 1) * H / 2 + jy]])
+            frame = Image.fromarray(cv2.warpAffine(np.asarray(frame), M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT))
+        else:
+            ww, wh = sw / z, sh / z
+            x0 = (sw - ww) / 2 + jx
+            y0 = (sh - wh) / 2 + jy
+            frame = src.transform((W, H), Image.AFFINE, (ww / W, 0, x0, 0, ww / W, y0), resample=Image.BICUBIC)
         arr = np.asarray(frame, dtype=np.float32)
 
         # éclairage
@@ -145,7 +159,7 @@ def main():
         # textes
         a1 = min(1, t / 0.3) * (1 if t < dur - 0.9 else max(0, (dur - t) / 0.9))
         a2 = (min(1, (t - t_full - 0.3) / 0.3) if t > t_full + 0.3 else 0) * (1 if t < dur - 0.9 else max(0, (dur - t) / 0.9))
-        img = caption(img, [(story["texte_pov"], a1), (story.get("texte_revelation", ""), a2)])
+        img = caption(img, [(story["texte_pov"], a1), (story.get("texte_revelation", ""), a2)], y0=int(story.get("texte_y", 1330)))
         # mention fiction / IA discrète
         d = ImageDraw.Draw(img, "RGBA")
         d.text((40, 52), story.get("mention", "Fiction • IA"), font=g.font("bold", 26), fill=(255, 255, 255, 120))
