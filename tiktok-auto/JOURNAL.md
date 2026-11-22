@@ -268,3 +268,11 @@ Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part s
 3. **« L'enceinte »** (courte, narratrice Léna → voix de femme) : 61,2 s, 15 plans 3D, 0 faute, 0 image de secours,
    enceinte générique sans logo. **Programmée le 23/11 à 21 h 15.**
 4. Prochain cycle : mesurer le POV (6 h après publication) ; nouvelle série P1 pour le 27/11 (promise).
+
+### 2026-11-22 ~14 h (Paris) — Cycle 16 (automatique)
+1. Statut : **POV « tel sous le lit » publié à 12 h 30** (https://www.tiktok.com/@rt_production_/video/7710956730946997526),
+   23 vues à ~55 min. Ce soir : Dernier Train P2 (18 h 45), Chambre 7 (21 h 15).
+2. Stats : 399 abonnés, 9 956 j'aime. « Le livre d'or » 211 vues ; plafond inchangé.
+3. **Nouvelle série « Le Phare »** (bible histoires/series/phare.md ; promise pour le 27/11) : P1 61,4 s,
+   narrateur Erwan → voix d'homme, 15 plans 3D, 0 faute, 0 image de secours. **Programmée le 27/11 à 18 h 45.**
+4. Prochain cycle : bilan du POV à ~7 h ; Phare P2 (28/11) ; histoire courte 24/11 21 h 15.

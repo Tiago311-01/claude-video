@@ -1,0 +1,56 @@
+{
+  "id": "2026-11-27_phare_p1",
+  "serie": "Le Phare",
+  "episode": 1,
+  "episodes_prevus": 3,
+  "creneau": "18:45",
+  "titre": "Le Phare — Partie 1",
+  "titre_ecran": "Le carnet du gardien disparu",
+  "narrateur": {"nom": "Erwan", "genre": "homme"},
+  "ambiance": "mystere",
+  "palette": "brume",
+  "couleur": [255, 210, 0],
+  "test": "carton de fin interactif",
+  "accroche": "Le gardien du phare a disparu en mille neuf cent quatre-vingt-dix-neuf. Pourtant, il écrit encore dans son carnet.",
+  "visuels_accroche": [
+    "an isolated old stone lighthouse on a small rocky island in Brittany at dusk, stormy sea, dramatic clouds, cinematic",
+    "close-up of an old leather logbook open on a wooden desk, fresh ink handwriting glistening, oil lamp light, no readable text"
+  ],
+  "scenes": [
+    {
+      "texte": "Je m'appelle Erwan. Ce mois-ci, j'ai accepté un travail étrange : surveiller un vieux phare sur une petite île bretonne. Pas de réseau. Un bateau de ravitaillement par semaine.",
+      "visuels": [
+        "a small boat approaching a rocky island with a lighthouse on a grey choppy sea, a man with a bag standing at the bow",
+        "a young man in a raincoat walking up a stone path toward a tall old lighthouse, wind, grey sky"
+      ]
+    },
+    {
+      "texte": "Dans la salle de veille, il y avait le carnet de bord du dernier gardien. Dernière entrée : décembre mille neuf cent quatre-vingt-dix-neuf. Puis plus rien. Il avait disparu pendant une tempête.",
+      "visuels": [
+        "a cramped old lighthouse watch room with brass instruments, a wooden desk and an oil lamp, sea view through round window",
+        "a huge storm with giant waves crashing against a lighthouse at night, lightning, dramatic",
+        "an old logbook with yellowed pages and faded handwriting, close-up, no readable text"
+      ]
+    },
+    {
+      "texte": "Le premier matin, j'ai ouvert le carnet. Une nouvelle ligne était apparue, à l'encre encore fraîche : le nouveau est arrivé. Il a oublié de fermer la porte du bas.",
+      "visuels": [
+        "a young man in a sweater opening an old logbook in the morning light inside a lighthouse, puzzled expression",
+        "extreme close-up of fresh wet ink on an old yellowed page, glistening, no readable text"
+      ]
+    },
+    {
+      "texte": "Je suis descendu. La porte du bas était grande ouverte. Et sur les marches, il y avait du sable mouillé. Et des algues. Encore fraîches.",
+      "visuels": [
+        "looking down a narrow spiral stone staircase inside a lighthouse, cold daylight from an open door at the bottom",
+        "close-up of wet sand and fresh green seaweed on old stone steps, cold light, eerie",
+        "an open wooden door at the base of a lighthouse facing a grey stormy sea, wind, cinematic"
+      ]
+    }
+  ],
+  "visuels_fin": ["a lighthouse beam sweeping across a dark stormy sea at night, fog, cinematic"],
+  "appel_action": "La suite demain, dans la partie deux. Et toi, tu dormirais dans ce phare ? Réponds oui ou non en commentaire.",
+  "carton_fin": "Tu y dormirais ? • Oui ou non en commentaire",
+  "legende": "Le gardien du phare a disparu en 1999… mais chaque matin, une nouvelle ligne apparaît dans son carnet. 😨 Partie 1/3. Tu y dormirais ? Oui ou non 👇 (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": ["#storytime", "#mystere", "#bretagne", "#frisson", "#fiction"]
+}
