@@ -1,0 +1,53 @@
+{
+  "id": "2026-11-23_enceinte",
+  "format": "histoire courte autonome",
+  "creneau": "21:15",
+  "titre": "L'enceinte",
+  "titre_ecran": "Bonne nuit Léna. Bonne nuit Marc.",
+  "narrateur": {"nom": "Léna", "genre": "femme"},
+  "ambiance": "paranormal",
+  "palette": "nuit",
+  "couleur": [255, 210, 0],
+  "test": "carton de fin interactif",
+  "accroche": "Hier soir, mon enceinte connectée a dit : bonne nuit Léna. Bonne nuit Marc. J'habite seule.",
+  "visuels_accroche": [
+    "a small round smart speaker glowing with a soft blue ring of light on a bedside table in a dark bedroom at night, eerie, no text, no logo",
+    "a young woman lying awake in bed in the dark, eyes wide open, blue glow on her face, cinematic"
+  ],
+  "scenes": [
+    {
+      "texte": "J'ai installé une enceinte connectée dans mon studio. Chaque soir, je lui dis bonne nuit, et elle me répond avec mon prénom. Un petit rituel idiot, mais qui me rassure.",
+      "visuels": [
+        "a cozy small studio apartment at night with warm fairy lights, a young woman getting into bed, peaceful",
+        "close-up of a smart speaker on a nightstand with a glowing light ring, soft warm bedroom light, no logo"
+      ]
+    },
+    {
+      "texte": "Hier soir, elle a répondu : bonne nuit Léna. Bonne nuit Marc. J'ai ri. Un bug, sûrement. Je ne connais aucun Marc.",
+      "visuels": [
+        "a young woman in bed laughing nervously while looking at a glowing smart speaker, dim light",
+        "a dark bedroom corner at night with an open closet door, deep shadows, unsettling stillness"
+      ]
+    },
+    {
+      "texte": "Ce matin, j'ai ouvert l'historique dans l'application. Chaque nuit, à trois heures pile, il y a un enregistrement. Une voix d'homme, calme, tout près du micro.",
+      "visuels": [
+        "a young woman sitting at a kitchen table in the morning looking at her smartphone, shocked expression, cold light",
+        "close-up of a smartphone screen showing an audio waveform in a dark room, glowing, no readable text",
+        "a dark bedroom at three in the morning seen from the doorway, a woman sleeping, a tall shadow standing near the nightstand, horror atmosphere"
+      ]
+    },
+    {
+      "texte": "Toujours la même question, à voix basse : est-ce qu'elle dort ? Et chaque fois, l'enceinte répond : oui, Marc. Elle dort.",
+      "visuels": [
+        "extreme close-up of a smart speaker's glowing blue light ring in total darkness, ominous",
+        "a young woman frozen in bed at night, staring at the camera in terror, blue light on her face"
+      ]
+    }
+  ],
+  "visuels_fin": ["a smart speaker glowing alone on a nightstand in an empty dark bedroom, the bed unmade, eerie, no logo"],
+  "appel_action": "Fin de l'histoire. Et toi, tu dormirais encore chez toi ? Réponds oui ou non en commentaire.",
+  "carton_fin": "Tu dormirais chez toi ? • Oui ou non en commentaire",
+  "legende": "Son enceinte connectée a dit « bonne nuit Marc »… elle habite seule. 😨 Tu dormirais encore chez toi ? Oui ou non 👇 (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": ["#storytime", "#mystere", "#frisson", "#creepytiktok", "#fiction"]
+}

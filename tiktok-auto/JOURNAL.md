@@ -260,3 +260,11 @@ Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part s
    cacher la main, sursaut final, -15,4 LUFS. Faux positifs de style justifiés (« Pov », « t'as »).
    **Programmé le 22/11 à 12 h 30** (1ᵉʳ créneau libre ; dimanche = 3 vidéos, limite respectée).
 5. Prochain cycle : histoire courte 23/11 21 h 15 ; préparer la série du 27/11.
+
+### 2026-11-22 ~08 h (Paris) — Cycle 15 (automatique)
+1. Statut : aujourd'hui POV « tel sous le lit » (12 h 30, 1ᵉʳ test du format), Dernier Train P2 (18 h 45), Chambre 7 (21 h 15).
+2. Stats : 399 abonnés, 9 956 j'aime. Dernier Train P1 (3D) 254 vues à ~13 h ; « Le livre d'or » 166 à ~10 h.
+   Plafond inchangé (~250-290). 0 partage.
+3. **« L'enceinte »** (courte, narratrice Léna → voix de femme) : 61,2 s, 15 plans 3D, 0 faute, 0 image de secours,
+   enceinte générique sans logo. **Programmée le 23/11 à 21 h 15.**
+4. Prochain cycle : mesurer le POV (6 h après publication) ; nouvelle série P1 pour le 27/11 (promise).
