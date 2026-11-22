@@ -1,0 +1,56 @@
+{
+  "id": "2026-11-28_phare_p2",
+  "serie": "Le Phare",
+  "episode": 2,
+  "episodes_prevus": 3,
+  "creneau": "18:45",
+  "titre": "Le Phare — Partie 2",
+  "titre_ecran": "Ce soir, la lampe s'éteindra",
+  "narrateur": {"nom": "Erwan", "genre": "homme"},
+  "ambiance": "suspense",
+  "palette": "brume",
+  "couleur": [255, 210, 0],
+  "test": "carton de fin interactif",
+  "accroche": "Le carnet avait écrit : ce soir, la lampe s'éteindra. À vingt-deux heures, tout est devenu noir.",
+  "visuels_accroche": [
+    "a lighthouse on a rocky island at night with its light suddenly off, total darkness, stormy sea, ominous",
+    "close-up of an old logbook page with fresh ink by an oil lamp, no readable text"
+  ],
+  "scenes": [
+    {
+      "texte": "Si tu as raté le début : je garde un phare en Bretagne. L'ancien gardien a disparu en mille neuf cent quatre-vingt-dix-neuf. Mais chaque matin, son carnet raconte ma journée.",
+      "visuels": [
+        "an isolated old stone lighthouse on a small rocky island in Brittany at dusk, stormy sea, cinematic",
+        "a young man in a sweater reading an old logbook by a round window inside a lighthouse, morning light"
+      ]
+    },
+    {
+      "texte": "Le deuxième matin, une nouvelle ligne : ce soir, la lampe s'éteindra. Il devra la rallumer à la main. À vingt-deux heures pile, le moteur s'est arrêté.",
+      "visuels": [
+        "a dark lighthouse engine room at night, old machinery, a single flashlight beam, tense atmosphere",
+        "a young man's face lit only by a flashlight in total darkness, alarmed expression, cinematic close-up"
+      ]
+    },
+    {
+      "texte": "J'ai monté les cent douze marches en courant. J'ai rallumé la vieille lampe à la main, comme autrefois. Et dans le faisceau, au loin, j'ai vu une barque sans lumière qui fonçait droit vers les rochers.",
+      "visuels": [
+        "a man running up a narrow spiral stone staircase inside a lighthouse at night, motion blur, flashlight",
+        "a man lighting a large old brass lighthouse lamp by hand, bright warm glow, dramatic",
+        "a powerful lighthouse beam cutting through fog over a stormy sea at night, revealing a small dark rowing boat near sharp rocks"
+      ]
+    },
+    {
+      "texte": "J'ai guidé la barque avec la lumière, jusqu'à ce qu'elle disparaisse dans la nuit. Le lendemain, dans le carnet, deux mots seulement : merci, Erwan. Et juste en dessous : il en reste une.",
+      "visuels": [
+        "a small rowing boat disappearing into fog on a dark sea, lit by a distant lighthouse beam, mysterious",
+        "a man holding an old logbook open in the morning light, stunned expression, close-up",
+        "extreme close-up of fresh ink handwriting on an old yellowed page, glistening, no readable text"
+      ]
+    }
+  ],
+  "visuels_fin": ["a lighthouse beam sweeping across a calm sea at dawn, mist, cinematic"],
+  "appel_action": "La fin demain, dans la partie trois. Et toi, tu aurais rallumé la lampe ? Réponds oui ou non en commentaire.",
+  "carton_fin": "Tu l'aurais rallumée ? • Oui ou non en commentaire",
+  "legende": "Le carnet du gardien disparu l'avait prévenu : « ce soir, la lampe s'éteindra »… 😨 Partie 2/3 du « Phare ». Tu l'aurais rallumée ? Oui ou non 👇 (Fiction : histoire inventée, voix et images générées par IA)",
+  "hashtags": ["#storytime", "#mystere", "#bretagne", "#frisson", "#fiction"]
+}

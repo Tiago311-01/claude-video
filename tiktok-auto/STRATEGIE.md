@@ -104,3 +104,6 @@ générateur (donc libre de droits, zéro risque de retrait pour droits d'auteur
   Abonnés en lente baisse (406 → 399 en 4 jours). Le seul signal fort du compte est la vidéo POV de l'utilisateur
   (≈ 11 % de j'aime/vue). → **Test du format POV** (10 s, texte « Pov : … », révélation + sursaut, mouvement 3D)
   au créneau inutilisé de **12 h 30**, en plus des 2 créneaux existants (max 3/jour respecté).
+- 22/11 (cycle 17) — **POV : meilleur démarrage du compte** (246 vues en ~6 h à 12 h 30, contre 232 pour le
+  meilleur épisode à 18 h 45), mais 1 seul j'aime. Coût de production très faible (~3 min) → **un POV par jour
+  à 12 h 30** pendant au moins 3 jours pour confirmer. Limiteur ajouté au son des POV (crête > 0 dB évitée).

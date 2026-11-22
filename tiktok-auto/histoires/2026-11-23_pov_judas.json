@@ -1,0 +1,25 @@
+{
+  "id": "2026-11-23_pov_judas",
+  "format": "pov",
+  "creneau": "12:30",
+  "duree": 10,
+  "graine": 10,
+  "visage_x": 0.5,
+  "visage_y": 0.55,
+  "texte_y": 300,
+  "texte_pov": "Pov : on sonne chez toi à 3h du mat' et tu regardes par le judas",
+  "texte_revelation": "…et la silhouette est déjà plus près.",
+  "visuel": "extreme fisheye view through a door peephole into a dark apartment hallway at night, a pale person with black eyes standing very close to the door staring straight into the peephole, horror film still, realistic",
+  "legende": "Pov : 3h du mat', quelqu'un sonne… 😨 Tu ouvrirais ? Oui ou non 👇 (Fiction, vidéo générée par IA)",
+  "hashtags": [
+    "#pov",
+    "#horreur",
+    "#creepytiktok",
+    "#frisson",
+    "#fiction"
+  ],
+  "verif_faux_positifs": {
+    "FR_SPELLING_RULE": "« Pov » = abréviation consacrée du format TikTok (textes très courts relus manuellement)",
+    "BARBARISME_TU": "registre familier voulu"
+  }
+}

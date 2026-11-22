@@ -196,7 +196,7 @@ def main():
 
     g.run(["ffmpeg", "-y", "-v", "error", "-i", str(tmp / "v.mp4"), "-i", str(tmp / "a.wav"), "-map", "0:v", "-map", "1:a",
            "-c:v", "libx264", "-preset", "slow", "-crf", "20", "-pix_fmt", "yuv420p", "-profile:v", "high",
-           "-af", g.loudnorm_filter(tmp / "a.wav"), "-c:a", "aac", "-b:a", "192k", "-ac", "2",
+           "-af", g.loudnorm_filter(tmp / "a.wav") + ",alimiter=limit=0.8:level=false", "-c:a", "aac", "-b:a", "192k", "-ac", "2",
            "-shortest", "-movflags", "+faststart", str(out)])
     g.run(["ffmpeg", "-y", "-v", "error", "-ss", "4.35", "-i", str(out), "-frames:v", "1", str(out.with_suffix(".jpg"))])
     print(f"OK -> {out}")

@@ -276,3 +276,13 @@ Ces vidéos ne sont pas suivies par l'automatisation (aucune action de ma part s
 3. **Nouvelle série « Le Phare »** (bible histoires/series/phare.md ; promise pour le 27/11) : P1 61,4 s,
    narrateur Erwan → voix d'homme, 15 plans 3D, 0 faute, 0 image de secours. **Programmée le 27/11 à 18 h 45.**
 4. Prochain cycle : bilan du POV à ~7 h ; Phare P2 (28/11) ; histoire courte 24/11 21 h 15.
+
+### 2026-11-22 ~20 h 15 (Paris) — Cycle 17 (automatique)
+1. Statut : Dernier Train P2 publiée à 18 h 45 (11 vues à 40 min) ; Chambre 7 ce soir 21 h 15.
+2. Stats : 399 abonnés, 9 958 j'aime. **POV « tel sous le lit » : 246 vues en ~6 h** (meilleur démarrage), 1 j'aime.
+3. Décision : un POV quotidien à 12 h 30 (voir STRATEGIE.md).
+4. **POV « judas »** (silhouette au bout du couloir ; variante au visage blanc écartée car trop proche d'un masque
+   de film connu) : 10 s, chute reformulée pour être claire, limiteur audio ajouté (crête -3 dB, -15,5 LUFS).
+   **Programmé le 23/11 à 12 h 30.**
+5. **« Le Phare » P2** : 60,1 s, voix d'homme, 14 plans 3D, 0 faute. **Programmée le 28/11 à 18 h 45.**
+6. Prochain cycle : histoire courte 24/11 21 h 15, POV du 24/11, Phare P3 (29/11).

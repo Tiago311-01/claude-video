@@ -67,9 +67,10 @@
     "episode": 2,
     "programme_le": "2026-11-22T18:45:00+01:00",
     "postSubmissionId": "0c7b97aa-32b7-4621-906e-0c2c9606e51d",
-    "statut": "scheduled",
+    "statut": "published",
     "cree_le": "2026-11-19T19:03:30+00:00",
-    "note": "remplacée par une nouvelle version (mouvement 3D)"
+    "note": "remplacée par une nouvelle version (mouvement 3D)",
+    "url": "https://www.tiktok.com/@rt_production_/video/7711053389848743190"
   },
   {
     "id": "2026-11-23_dernier_train_p3",
@@ -165,5 +166,23 @@
     "postSubmissionId": "c39c7cc4-e576-40a7-a746-f8a3b8efb008",
     "statut": "scheduled",
     "cree_le": "2026-11-22T12:52:52+00:00"
+  },
+  {
+    "id": "2026-11-23_pov_judas",
+    "serie": null,
+    "episode": null,
+    "programme_le": "2026-11-23T12:30:00+01:00",
+    "postSubmissionId": "76979c91-97aa-4777-9fe3-7c1af3c81c7d",
+    "statut": "scheduled",
+    "cree_le": "2026-11-22T18:36:00+00:00"
+  },
+  {
+    "id": "2026-11-28_phare_p2",
+    "serie": "Le Phare",
+    "episode": 2,
+    "programme_le": "2026-11-28T18:45:00+01:00",
+    "postSubmissionId": "2c7f380a-0461-47a7-9258-02b59e899ab4",
+    "statut": "scheduled",
+    "cree_le": "2026-11-22T18:58:28+00:00"
   }
 ]

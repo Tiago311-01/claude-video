@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "video": "videos/2026-11-23_pov_judas.mp4",
+  "duree_s": 10.0,
+  "taille_mo": 19.5,
+  "volume": {
+    "I": -15.5,
+    "LRA": 1.5,
+    "peak": -3.0
+  },
+  "erreurs": [],
+  "avertissements": [],
+  "planche_contact": "videos/2026-11-23_pov_judas.planche.jpg",
+  "a_faire_par_agent": "Ouvrir la planche contact et confirmer : sous-titres lisibles, visuels cohérents, aucun texte parasite."
+}
